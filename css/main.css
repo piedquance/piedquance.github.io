@@ -21,23 +21,7 @@ header:hover {
   padding:1em;
   border:1em;
   background-color: #bbb;
-<<<<<<< HEAD
   font-family: "Courier New", Courier, monospace;
-=======
-}
-.presents:hover {
-  background-color: #ddd;
-}
-#works{
-  font-size: 16px;
-  text-align: center;
-  font-family: monospace;
-  margin-top: 0px;
-}
-#gamelink:link {
-  color:black;
->>>>>>> 9731a7b9defffe1c7905be9deb9cae978ceb5f07
-
 }
 .mainContainer:hover {
   background-color: #ddd;
