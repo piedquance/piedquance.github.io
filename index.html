@@ -2,28 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Hold up. Is this an actual website???">
+  <meta name="keywords" content="shutterstacks, shutter, stacks, green">
+  <meta name="author" content="Mr.Green">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shutterstacks</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" >
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto" rel="stylesheet">
     <link rel="text/javascript" href="javascript/mainPage.js">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
   </head>
-  <body onload="setInterval(whatTimeSeen, 10);">
-  <div id="title">
-    <h1>Shutterstacks</h1>
+  <body>
+  <header id="title">
+    Shutterstacks
+  </header>
+  <div id="time" class="mainContainer">
+    oof
   </div>
-  <div class="presents">
-    <p id="time">oof</p>
-    <p id="works">This is a work in progress.<br/>
-    So don't get your tea in a jumble.</p>
-  </div>
-
-  <div id="game" class="presents">
-       <p id="normalP"><a href="game.html" id="gamelink" target="_blank">Some game that's not quite finished yet.  </a></p>
-  </div>
-
-<script type="text/javascript" src="javascript/mainPage.js">
+<p id="toDo">To do: Center the game</p>
+<div class="p5gameContainer">
+    <iframe src="p5Game.html"
+    id="p5Game"
+    ></iframe>
+</div>
+<script type="text/javascript" src="javascript/main.js">
 </script>
   </body>
 </html>

@@ -1,58 +1,53 @@
-#title {
+body {
+  font-size: 10px;
+}
+header {
   color: #fff;
   background-color: #000;
-  font-family: monospace;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 3em;
+  padding: 0.5em;
   text-align: center;
-  padding: 5px;
 }
-#title:hover {
+header:hover {
   color: #000;
   background-color: #fff;
 }
-.presents {
-  margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 75%;
-  height:100px;
+.mainContainer {
+  margin:auto;
+  margin-top: 2em;;
+  margin-bottom: 2em;
+  width: 60%;
+  padding:1em;
+  border:1em;
   background-color: #bbb;
-}
-.presents:hover {
-  background-color: #ddd;
-}
-#works{
-  font-size: 16px;
-  text-align: center;
-  font-family: monospace;
-  margin-top: 0px;
-}
-#gamelink {
-  width:75%
-}
-#gamelink:link {
-  color:black;
+  font-family: "Courier New", Courier, monospace;
 
 }
-#gamelink:visited {
-  color:black;
-}
-#gamelink:hover {
-  text-decoration: none;
-}
-#gamelink:active {
-  text-decoration: none;
+.mainContainer:hover {
+  background-color: #ddd;
 }
 #time {
-  padding-top: 20px;
   font-size: 16px;
   text-align: center;
-  font-family: monospace;
-  margin-bottom:0px;
+  width:25%;
 }
-#normalP {
-  padding-top: 20px;
-  font-size: 16px;
-  text-align: center;
-  font-family: monospace;
-  margin-top: 0px;
+.p5gameContainer {
+      position: relative;
+      overflow: hidden;
+      padding-top: 100%;
+      padding-right: 0%;
+}
+#p5Game {
+  position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+#toDo {
+  color:#000;
+  font-size: 1.4em;
+  font-family: "Cutive Mono", monospace;
 }
