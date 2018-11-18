@@ -9,7 +9,7 @@ function setup() {
   myCanvas.parent('game');
 }
 function draw() {
-    background(100)
+    background(170)
   fill(0);
   rect(x, y, 20, 20);
   if (y < 0) {
