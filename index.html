@@ -5,20 +5,24 @@
     <title>Shutterstacks</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" >
     <link rel="text/javascript" href="javascript/mainPage.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
   </head>
-  <body>
+  <body onload="setInterval(whatTimeSeen, 10);">
   <div id="title">
     <h1>Shutterstacks</h1>
   </div>
   <div class="presents">
+    <p id="time">oof</p>
     <p id="works">This is a work in progress.<br/>
     So don't get your tea in a jumble.</p>
   </div>
-  <a href="game.html" id="gamelink" target="_blank">
+
   <div id="game" class="presents">
-       <p id="works">Some game that's not quite finished yet.</p>
+       <p id="normalP"><a href="game.html" id="gamelink" target="_blank">Some game that's not quite finished yet.  </a></p>
   </div>
-  </a>
+
 <script type="text/javascript" src="javascript/mainPage.js">
 </script>
   </body>

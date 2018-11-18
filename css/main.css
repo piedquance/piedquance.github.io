@@ -21,10 +21,13 @@
   background-color: #ddd;
 }
 #works{
-  padding-top: 25px;
   font-size: 16px;
   text-align: center;
   font-family: monospace;
+  margin-top: 0px;
+}
+#gamelink {
+  width:75%
 }
 #gamelink:link {
   color:black;
@@ -38,4 +41,18 @@
 }
 #gamelink:active {
   text-decoration: none;
+}
+#time {
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-family: monospace;
+  margin-bottom:0px;
+}
+#normalP {
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 0px;
 }
