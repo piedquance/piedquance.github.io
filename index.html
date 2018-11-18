@@ -9,21 +9,24 @@
     <title>Shutterstacks</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" >
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
   </head>
-  <body>
+  <body onload="setInterval(timeHere, 1000);">
   <header id="title">
     Shutterstacks
   </header>
   <div id="time" class="mainContainer">
     oof
   </div>
-<p id="toDo">To do: Center the game</p>
-<div class="p5gameContainer">
-    <iframe src="p5Game.html"
-    id="p5Game"
-    ></iframe>
-</div>
+  <div id="game">
+    <p id="cornerTouch">The cube has touched the corner 0 times.</p>
+    <p id="youHere">You have been here for 0 seconds.</p>
+  </div>
 <script type="text/javascript" src="javascript/main.js">
+</script>
+<script type="text/javascript" src="javascript/p5Game.js">
 </script>
   </body>
 </html>

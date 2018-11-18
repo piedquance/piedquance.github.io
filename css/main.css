@@ -13,6 +13,10 @@ header:hover {
   color: #000;
   background-color: #fff;
 }
+canvas {
+  display: block;
+  margin: auto;
+}
 .mainContainer {
   margin:auto;
   margin-top: 2em;;
@@ -21,7 +25,7 @@ header:hover {
   padding:1em;
   border:1em;
   background-color: #bbb;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Cutive Mono", Courier, monospace;
 }
 .mainContainer:hover {
   background-color: #ddd;
@@ -31,22 +35,8 @@ header:hover {
   text-align: center;
   width:25%;
 }
-.p5gameContainer {
-      position: relative;
-      overflow: hidden;
-      padding-top: 100%;
-      padding-right: 0%;
-}
-#p5Game {
-  position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   border: 0;
-}
-#toDo {
-  color:#000;
-  font-size: 1.4em;
-  font-family: "Cutive Mono", monospace;
+#cornerTouch, #youHere {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 16px;
+  text-align: center;
 }
