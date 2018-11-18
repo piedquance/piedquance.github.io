@@ -1,0 +1,41 @@
+#title {
+  color: #fff;
+  background-color: #000;
+  font-family: monospace;
+  text-align: center;
+  padding: 5px;
+}
+#title:hover {
+  color: #000;
+  background-color: #fff;
+}
+.presents {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 75%;
+  height:100px;
+  background-color: #bbb;
+}
+.presents:hover {
+  background-color: #ddd;
+}
+#works{
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: center;
+  font-family: monospace;
+}
+#gamelink:link {
+  color:black;
+
+}
+#gamelink:visited {
+  color:black;
+}
+#gamelink:hover {
+  text-decoration: none;
+}
+#gamelink:active {
+  text-decoration: none;
+}
