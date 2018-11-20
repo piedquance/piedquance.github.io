@@ -1,19 +1,30 @@
 var speedx = 1.1;
 var speedy = 1;
-var x = 200;
-var y = 200;
+var x = 10;
+var y = 10;
 var edgeCount = 0;
 var edges = document.getElementById("cornerTouch");
 function setup() {
-  sketchS = windowWidth/4.2;
+  
+if(windowWidth < 450) { sketchS = windowWidth/1.5;
+  } else { sketchS = windowWidth/4.2;}
+
+
 var myCanvas = createCanvas(sketchS, sketchS);
-  myCanvas.parent('game');
+ 
+ myCanvas.parent('game');
 }
+
 function draw() {
+
  rectS = sketchS/20;
+
  background(170)
-  fill(0);
-  rect(x, y, rectS, rectS);
+ 
+ fill(0);
+ 
+ rect(x, y, rectS, rectS);
+
 if (y < 0) {
     speedy = random(1, 1.5);
   } else if (y > (sketchS - rectS)) {
@@ -23,8 +34,10 @@ if (y < 0) {
   } else if (x > (sketchS - rectS)) {
     speedx = random(-1.5, -1);
 }
-    x = x + speedx;
-    y = y + speedy;
+  
+  x = x + speedx;
+  
+  y = y + speedy;
   
 if ((x == 0 && y == 0) ||
     (x == 0 && y == 380) ||
