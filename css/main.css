@@ -1,42 +1,57 @@
 body {
   font-size: 10px;
+  background-color: #fff;
+  margin: 0;
 }
 header {
   color: #fff;
   background-color: #000;
   font-family: 'Cutive Mono', monospace;
-  font-size: 3em;
-  padding: 0.5em;
+  font-size: 3.3em;
+  padding: 0.2em 0em;
   text-align: center;
+  width: 100%;
+  margin: auto;
 }
 header:hover {
-  color: #000;
-  background-color: #fff;
+  color: #aaa;
 }
 canvas {
   display: block;
   margin: auto;
 }
-.mainContainer {
-  margin:auto;
-  margin-top: 2em;;
-  margin-bottom: 2em;
-  width: 60%;
-  padding:1em;
-  border:1em;
-  background-color: #bbb;
-  font-family: "Cutive Mono", Courier, monospace;
-}
-.mainContainer:hover {
-  background-color: #ddd;
-}
 #time {
   font-size: 16px;
   text-align: center;
-  width:25%;
+  width:100%;
+  color:#fff;
+  font-family: "Cutive Mono", Courier, monospace;
+  margin:auto;
+  padding:0.5em 0;
+  border:1em;
+  background-color: #000;
+}
+#time:hover {
+    color: #aaa;
 }
 #cornerTouch, #youHere {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 16px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1.5em;
+      text-align: center;
+}
+nav {
+  margin: auto;
   text-align: center;
+  width: auto;
+}
+.menu {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 2em;
+    color: #000;
+    letter-spacing: 2px;
+    margin: 0 5%;
+}
+.menu:hover {
+  color: #aaa;
 }
