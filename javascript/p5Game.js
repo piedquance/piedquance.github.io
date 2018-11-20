@@ -5,24 +5,27 @@ var y = 200;
 var edgeCount = 0;
 var edges = document.getElementById("cornerTouch");
 function setup() {
-  var myCanvas = createCanvas(400, 400);
+  sketchS = windowWidth/4.2;
+var myCanvas = createCanvas(sketchS, sketchS);
   myCanvas.parent('game');
 }
 function draw() {
-    background(170)
+ rectS = sketchS/20;
+ background(170)
   fill(0);
-  rect(x, y, 20, 20);
-  if (y < 0) {
+  rect(x, y, rectS, rectS);
+if (y < 0) {
     speedy = random(1, 1.5);
-  } else if (y > 380) {
+  } else if (y > (sketchS - rectS)) {
     speedy = random(-1.5, -1)}
   if (x < 0) {
     speedx = random(1, 1.5);
-  } else if (x > 380) {
+  } else if (x > (sketchS - rectS)) {
     speedx = random(-1.5, -1);
 }
     x = x + speedx;
     y = y + speedy;
+  
 if ((x == 0 && y == 0) ||
     (x == 0 && y == 380) ||
     (x == 380 && y == 0) ||
