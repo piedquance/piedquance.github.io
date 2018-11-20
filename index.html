@@ -7,7 +7,7 @@
   <meta name="author" content="Mr.Green">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shutterstacks</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" >
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
@@ -15,13 +15,13 @@
   </head>
   <body onload="setInterval(timeHere, 1000);">
   <header id="title">
-    Shutterstacks
+    <p class="fade">Shutterstacks</p>
   </header>
   <nav>
-<a href="https://shutterstacks.github.io/" class="menu">Home</a> <a href="#" class="menu">Stuff</a> <a href="#" class="menu">Info</a>
+<a href="#" class="menu" id="current">Home</a> <a href="#" class="menu">Stuff</a> <a href="info.html" class="menu">Info</a>
 </nav>
-  <div id="time">
-    oof
+  <div id="timeContainer">
+  <p class="fade" id="time">  oof</p>
   </div>
   <div id="game">
     <p id="cornerTouch">The cube has touched the corner 0 times.</p>
