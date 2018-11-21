@@ -59,13 +59,14 @@ nav {
 }
 .info {
   margin:auto;
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-    font-size: 1.5em;
-    background-color: #eee;
-    width:70%;
-    padding: 0.5em 0;
+  font-size: 1.5em;
+  background-color: #ddd;
+  width:70%;
+  padding: 0.5em 0;
 }
 
 .fade {
@@ -75,6 +76,34 @@ nav {
       -ms-animation: fadein 2s;
        -o-animation: fadein 2s;
           animation: fadein 2s;
+}
+.box {
+  float: left;
+  margin:auto;
+  margin-top: 1em;
+  margin-left: 2.5%;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  background-color: #ddd;
+  width:65%;
+  padding: 0.5em 0;
+}
+.box:hover {
+  background-color: #bbb;
+}
+/*.right{
+  position: fixed;
+  top: 1;
+  right: 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  background-color: #ddd;
+  width:30%;
+  height: 500px;
+  padding: 0.5em 0;
+}*/
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -95,3 +124,4 @@ nav {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
