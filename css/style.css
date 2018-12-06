@@ -66,21 +66,38 @@ nav {
   font-size: 1.5em;
   background-color: #ddd;
   width:70%;
-  padding: 0.5em 0;
+  padding: 0.1em 0.5em;
 }
 .info2 {
-  margin:auto;
-  margin-top: 3em;
-  margin-bottom: 1em;
-  text-align: center;
+  text-align:center;
+    margin:auto;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 70%;
+    max-width: 45em;
+    padding: 2em 1em;
+    background-color: #ddd;
+}
+.info2link {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.6em;
-  background-color: #ddd;
-  width: 70%;
-  max-width: 30em;
-  padding: 1em 0.5em;
 }
-
+.info2link:link {
+  text-decoration: none;
+    color: #000;
+}
+.info2link:visited {
+  text-decoration: none;
+  color: #000;
+}
+.info2link:hover {
+    text-decoration: underline;
+  color: #000;
+}
+.info2link:active {
+  text-decoration: underline;
+  color: #444;
+}
 .fade {
   margin: 0;
   -webkit-animation: fadein 2s;
