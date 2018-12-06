@@ -1,0 +1,70 @@
+body {
+  font-size: 10px;
+  margin: 0;
+}
+header {
+  color: #fff;
+  background-color: #000;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2.5em;
+  padding: 0.2em 0em;
+  text-align: center;
+  margin-left: 5.5em;
+}
+#fade {
+  margin: 0;
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+li:hover {
+  color: #aaa;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 3em 0;
+  width: 25%;
+  max-width: 11em;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
+li {
+  display: block;
+  padding : 1.4em 1em;
+ text-decoration: none;
+}
+.text {
+  margin-left: 11em;
+  padding: 1em 1em;
+  height: 1000px;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
