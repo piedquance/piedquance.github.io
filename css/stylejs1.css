@@ -2,14 +2,58 @@ body {
   font-size: 10px;
   margin: 0;
 }
+@media screen and (min-width:600px) {
 header {
-  color: #fff;
+  margin-left:5.5em;
+ color: #fff;
   background-color: #000;
   font-family: 'Cutive Mono', monospace;
   font-size: 2.5em;
   padding: 0.2em 0em;
   text-align: center;
-  margin-left: 5.5em;
+} 
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 3em 0;
+  width: 25%;
+  max-width:11em;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
+.text {
+  margin-left: 11em;
+  padding: 1em 1em;
+  height: 1000px;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
+}
+@media screen and (max-width:599px) {
+header {
+  text-align: center;
+  margin:auto;
+  color:#fff;
+  background-color: #000;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2.5em;
+  padding: 0.2em 0em
+ margin-left:5.5em;
+}
+ul {
+   display:none;
+}
+.text {
+  padding: 1em 1em;
+  height: 1000px;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
 }
 #fade {
   margin: 0;
@@ -22,31 +66,10 @@ header {
 li:hover {
   color: #aaa;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 3em 0;
-  width: 25%;
-  max-width: 11em;
-  height: 100%;
-  overflow: auto;
-  position: fixed;
-  background-color: #000;
-  color: #fff;
-  font-size: 1.5em;
-  font-family: "Courier New", Courier, monospace;
-}
 li {
   display: block;
   padding : 1.4em 1em;
  text-decoration: none;
-}
-.text {
-  margin-left: 11em;
-  padding: 1em 1em;
-  height: 1000px;
-  font-size: 1.5em;
-  font-family: "Courier New", Courier, monospace;
 }
 @keyframes fadein {
     from { opacity: 0; }
