@@ -14,19 +14,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
   </head>
   <body onload="setInterval(timeHere, 1000);">
-  <header id="title">
-    <p class="fade">Shutterstacks</p>
-  </header>
+  <header>
+    <div id = "title">
+      <p class="fade">
+        Shutterstacks</p>
+    </div>
   <nav>
 <a href="#" class="menu" id="current">Home</a> <a href="stuff.html" class="menu">Stuff</a> <a href="info.html" class="menu">Info</a>
 </nav>
   <div id="timeContainer">
   <p class="fade" id="time">  oof</p>
   </div>
+    </header>
   <div id="game">
     <p id="cornerTouch">The cube has touched the corner 0 times.</p>
     <p id="youHere">You have been here for 0 seconds.</p>
   </div>
+
 <script type="text/javascript" src="javascript/main.js">
 </script>
 <script type="text/javascript" src="javascript/p5Game.js">
