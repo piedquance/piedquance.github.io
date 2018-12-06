@@ -68,6 +68,18 @@ nav {
   width:70%;
   padding: 0.5em 0;
 }
+.info2 {
+  margin:auto;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6em;
+  background-color: #ddd;
+  width: 70%;
+  max-width: 30em;
+  padding: 1em 0.5em;
+}
 
 .fade {
   margin: 0;
