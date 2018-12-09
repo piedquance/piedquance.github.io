@@ -1,0 +1,21 @@
+Une introduction abrégée sur JavaScript.
+
+Donc, vous avez un ordinateur. Sur cet ordinateur, vous avez un navigateur web. Grâce à celui-ci, vous pouvez lire ce texte. Formidable!
+Le navigateur, par contre, doit aussi pouvoir lire ce texte, mais d'une façon un peu différente. Il doit pouvoir lire comment afficher le texte, et avec quelle couleur, police de caracrère, taille, alignement et plus encore. Quelle importance doit-t-il accorder à telle ou telle partie du texte? Comment peut-il avoit accès à toute cette information?
+
+html
+
+Bon, plus précisément html et css, mais je vais seulement parler d'html pour l'instant.
+HTML est un acronyne qui veut dire Hypertext Markup Language.
+
+
+
+
+
+
+qui donnent de l'informatioin sur ce que ce texte représente dans la page
+
+
+Avant d'apprendre comment faire quelque chose comme, disons, cela :
+Truc très intéressant!!!,
+il va falloir que vous appreniez les bases de JavaScript.
