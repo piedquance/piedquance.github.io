@@ -42,6 +42,9 @@ a:hover {
 p {
   margin: 0;
 }
+button {
+  
+}
 @media screen and (min-width:600px) {
 header {
   margin-left:5.5em;
