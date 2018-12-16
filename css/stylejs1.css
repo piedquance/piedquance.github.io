@@ -43,7 +43,11 @@ p {
   margin: 0;
 }
 button {
-  
+
+}
+canvas {
+  display: block;
+  margin: auto;
 }
 @media screen and (min-width:600px) {
 header {
