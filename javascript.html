@@ -18,35 +18,35 @@
   <body>
     <nav>
       <ul>
-        <li id="fade"><a href="#p1">Introduction</a></li>
-        <li id="fade"><a href="#p2">ipsum</a></li>
-        <li id="fade"><a href="#p3">dolor</a></li>
-        <li id="fade"><a href="#">sit</a></li>
-        <li id="fade"><a href="#">met</a></li>
-        <li id="fade"><a href="#">consectetur</a></li>
-        <li id="fade"><a href="#">dipisicing</a></li>
-        <li id="fade"><a href="#">elit</a></li>
+        <li id="fade"><a href="#p1">HTML et JavaScript</a></li>
+        <li id="fade"><a href="#p2">Valeurs et variables</a></li>
+        <li id="fade"><a href="#p3"></a></li>
+        <li id="fade"><a href="#"></a></li>
+        <li id="fade"><a href="#"></a></li>
+        <li id="fade"><a href="#"></a></li>
+        <li id="fade"><a href="#"></a></li>
+        <li id="fade"><a href="#"></a></li>
       </ul>
     </nav>
     <header id="title">
       <p id="fade">Une introduction abrégée sur JavaScript</p>
     </header>
     <div class="text">
-      <h2 id="p1">Introduction</h2>
-      <p>Donc, vous avez un ordinateur. Sur cet ordinateur, vous avez un navigateur web. Grâce à celui-ci, vous pouvez lire ce texte. Formidable! Le navigateur, par contre, doit aussi pouvoir lire ce texte, mais d'une façon un peu différente. Il doit pouvoir lire comment afficher le texte, et avec quelle couleur, police de caracrère, taille, alignement et plus encore. Quelle importance doit-t-il accorder à telle ou telle partie du texte? Comment peut-il avoit accès à toute cette information?
+      <h2 id="p1">HTML et JavaScript</h2>
+      <p>Donc, vous avez un ordinateur. Sur cet ordinateur, vous avez un navigateur web. Grâce à celui-ci, vous pouvez lire ce texte. Formidable! Le navigateur, par contre, doit aussi pouvoir lire ce texte, mais d'une façon un peu différente. Il doit pouvoir lire comment afficher le texte, et avec quelle couleur, police de caracrères, taille, alignement et plus encore. Quelle importance doit-il accorder à telle ou telle partie du texte? Comment peut-il avoir accès à toute cette information?
       <br><br>
       HTML!
       <br><br>
       Plus précisément HTML et CSS, mais je vais seulement parler d'HTML pour l'instant. HTML(Hypertext Markup Language) est un langage de balises, appelé en anglais un <i>markup language</i>. Les fichiers .html servent à afficher le contenu des pages web. Chaque élément dans un fichier .html suit le format suivant :</p>
       <pre><code class="lang-html">&ltbalise attribut="valeur"&gtcontenu&lt/balise&gt</code></pre>
-      <p id="banane">Vous ne voyez pas le texte entre crochets (balises) car le navigateur web affiche seulement le contenu (couleur noire). Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré de balises   &ltp&gt et   &lt/p&gt, qui veulent dire paragraphe. Il a aussi un attribut id="banane", cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p>
+      <p id="banane">Vous ne voyez pas le texte entre crochets (balises) car le navigateur web affiche seulement le contenu (couleur noire). Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré de balises   &ltp&gt et   &lt/p&gt, qui veulent dire paragraphe. Il a aussi un attribut id="banane", cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p>
       <pre><code class="lang-javascript">document.getElementById("banane").innerHTML = "Vous pouvez changer ce texte si vous voulez."</code></pre>
       <p>Si bien écrite, cette commande devrait changer le paragraphe précédent par le texte que vous avez mis entre guillemets. "document" est le nom donné au fichier .html (En d'autres mots, la page web). "getElementById" est une fonction qui requiert une valeur afin de donner un résultat. La valeur dans ce cas-là est "banane", et le résultat de la fonction est l'élément ayant l'identifiant "banane". Finalement, innerHTML permet d'accéder au contenu de l'élément. Si vous entrez la commande sans le signe d'égalité et le texte de droite, la console vous renvoie le contenu de l'élément.</p>
       <button id="butt" onclick=replace(document.getElementById("banane"))>Cliquez içi pour remettre le texte.</button>
-      <p>Ce boutton fonctionne de la même manière. Il a un attribut "onclick" dont la valeur est une fonction JavaScript. Lorsque le boutton est appuyé, cette fonction replace le paragraphe avec le texte original. En utilisant JavaScript, il est possible de rendre une page web plus dynamique et interactive. Voici un autre exemple de son utilisation :</p>
+      <p>Ce bouton fonctionne de la même manière. Il a un attribut "onclick" dont la valeur est une fonction JavaScript. Lorsque le bouton est appuyé, cette fonction replace le paragraphe avec le texte original. En utilisant JavaScript, il est possible de rendre une page web plus dynamique et interactive. Voici un autre exemple de son utilisation :</p>
       <div id="cube"></div>
       Avant de pouvoir faire cela et plus encore, il vous faudra apprendre les bases de JavaScript.
-      <h2 id="p2"></h2>
+      <h2 id="p2">Valeurs et variables</h2>
       <p id="p3"></p>
     </div>
 
