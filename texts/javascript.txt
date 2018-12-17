@@ -4,3 +4,9 @@
 [Conditionnels et fonctions, ensemble]       print()
 [Objets et tableau(objet Array)]      console.log
 [DOM, un peu de HTML CSS]
+
+
+<pre><code class="lang-javascript">
+</code></pre>
+
+  &lt&gt
