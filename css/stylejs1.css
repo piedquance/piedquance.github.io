@@ -29,7 +29,7 @@ li {
 .text {
   font-size: 1.5em;
   font-family: "Courier New", Courier, monospace;
-  height: 1000px;
+  height: 100%;
   padding: 1em 1em;
 }
 a {
@@ -42,8 +42,31 @@ a:hover {
 p {
   margin: 0;
 }
+#basic {
+  font: arial;
+}
+h2 {
+  margin-top: 0;
+}
 button {
-
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    border: none;
+    padding: 1em 1em;
+    text-decoration: none;
+    background: #444;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+button:hover {
+    background: #666;
 }
 canvas {
   display: block;
