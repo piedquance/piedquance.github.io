@@ -20,7 +20,7 @@
       <ul>
         <li id="fade"><a href="#p1">HTML et JavaScript</a></li>
         <li id="fade"><a href="#p2">Valeurs et variables</a></li>
-        <li id="fade"><a href="#p3"></a></li>
+        <li id="fade"><a href="#p3">Les opérations sur les variables</a></li>
         <li id="fade"><a href="#"></a></li>
         <li id="fade"><a href="#"></a></li>
         <li id="fade"><a href="#"></a></li>
@@ -37,17 +37,31 @@
       <br><br>
       HTML!
       <br><br>
-      Plus précisément HTML et CSS, mais je vais seulement parler d'HTML pour l'instant. HTML(Hypertext Markup Language) est un langage de balises, appelé en anglais un <i>markup language</i>. Les fichiers .html servent à afficher le contenu des pages web. Chaque élément dans un fichier .html suit le format suivant :</p>
-      <pre><code class="lang-html">&ltbalise attribut="valeur"&gtcontenu&lt/balise&gt</code></pre>
-      <p id="banane">Le navigateur web affiche seulement le texte noir sur l'écran, le reste sert à la structure. Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises   &ltp&gt et   &lt/p&gt, qui veulent dire paragraphe. Il a aussi un attribut id="banane", cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p>
-      <pre><code class="lang-javascript">document.getElementById("banane").innerHTML = "Vous pouvez changer ce texte si vous voulez."</code></pre>
+      Plus précisément HTML et CSS, mais je vais seulement parler d'HTML pour l'instant. HTML(Hypertext Markup Language) est un langage de balises, appelé en anglais un <i>markup language</i>. Les fichiers .html servent à afficher le contenu des pages web. Chaque élément dans un fichier .html suit le format suivant :</p><br>
+      <pre><code class="lang-html">&ltbalise attribut="valeur"&gtcontenu&lt/balise&gt</code></pre><br>
+      <p id="banane">Le navigateur web affiche seulement le texte noir sur l'écran, le reste sert à la structure. Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises   &ltp&gt et   &lt/p&gt, qui veulent dire paragraphe. Il a aussi un attribut id="banane", cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
+      <pre><code class="lang-javascript">document.getElementById("banane").innerHTML = "Vous pouvez changer ce texte si vous voulez."</code></pre><br>
       <p>Si bien écrite, cette commande devrait changer le paragraphe précédent par le texte que vous avez mis entre guillemets. "document" est le nom donné au fichier .html (En d'autres mots, la page web). "getElementById" est une fonction qui requiert une valeur afin de donner un résultat. La valeur dans ce cas-là est "banane", et le résultat de la fonction est l'élément ayant l'identifiant "banane". Finalement, innerHTML permet d'accéder au contenu de l'élément. Si vous entrez la commande sans le signe d'égalité et le texte de droite, la console vous renvoie le contenu de l'élément.</p>
       <button id="butt" onclick=replace(document.getElementById("banane"))>Cliquez içi pour remettre le texte.</button>
       <p>Ce bouton fonctionne de la même manière. Il a un attribut "onclick" dont la valeur est une fonction JavaScript. Lorsque le bouton est appuyé, cette fonction replace le paragraphe avec le texte original. En utilisant JavaScript, il est possible de rendre une page web plus dynamique et interactive. Voici un autre exemple de son utilisation :</p>
       <div id="cube"></div>
       Toutefois, avant de pouvoir faire cela et plus encore, il vous faudra apprendre les bases de JavaScript.
       <h2 id="p2">Valeurs et variables</h2>
-      <p></p>
+      <p>Il existe différents types de valeurs dans JavaScript, qui décrivent différents sortes d'information. Pour du texte, on utilise des chaînes de caractères, une série de symboles avec des guillemets au début et à la fin.</p><br>
+      <pre><code class="lang-javascript">"Paul mangeait une pomme."</code></pre><br>
+      <p>Ces guillemets peuvent être simples ou doubles, mais doivent être pareilles. La console envoie une erreur s'ils sont différents. Les valeurs numériques sont affichés par des nombres positifs, négatifs ou décimaux.</p><br>
+      <pre><code class="lang-javascript">-2.71828182845904523536</code></pre><br>
+      <p>JavaScript permet aussi d'afficher des booléens, des valeurs pouvant seulement être vrais ou fausses.</p><br>
+      <pre><code class="lang-javascript">True
+False</code></pre><br>
+      <p>Si vous écrivez ces valeurs dans la console, elle vous les renvoie, ne sachant pas pas quoi faire avec. Les valeurs ne sont pas mémorisés par l'ordinateur, il faut pour cela utiliser des variables.</p><br>
+      <pre><code class="lang-javascript">var texte = "Bla bla bla";</code></pre><br>
+      <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé texte qui a comme valeur "Bla bla bla". Le symbole = est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console.</p><br>
+      <pre><code class="lang-javascript">texte;
+//L'ordinateur envoie "Bla bla bla" comme réponse.</code></pre><br>
+      <p>Après qu'une variable a été créé, elle peut être modifié avec l'opérateur d'assignation. L'identifiant d'une variable ne peut pas commencer par un chiffre ou avoir des espaces. Il existe 3 types de déclarations de variables dans JavaScript : var, let et const.<br><b>var</b> déclare une variable pouvant être modifié et accessible partout dans le code.<br><b>let</b> déclare une varable pouvant être modifié, mais dont l'accès est restreint au bloc où elle a été créé. Cela sera expliqué plus amplement plus tard.<br><b>const</b> déclare une variable non modifiable auquelle l'accès est également restreint au bloc où elle a été créé.</p>
+      <p>En guise d'exercice, vous pouvez essayer de créer quelques variables avec la console et d'assigner une variable à une autre.</p>
+      <h2 id="p3">Les opérations sur les variables</h2>
     </div>
   <script type="text/javascript" src="javascript/cube.js">
   </script>

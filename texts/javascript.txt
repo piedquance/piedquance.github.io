@@ -6,7 +6,6 @@
 [DOM, un peu de HTML CSS]
 
 
-<pre><code class="lang-javascript">
-</code></pre>
+<pre><code class="lang-javascript"></code></pre>
 
   &lt&gt

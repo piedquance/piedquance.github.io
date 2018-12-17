@@ -30,7 +30,7 @@ li {
   font-size: 1.5em;
   font-family: "Courier New", Courier, monospace;
   height: 100%;
-  padding: 1em 1em;
+  padding: 1em 2em;
 }
 a {
   text-decoration: none;
@@ -80,6 +80,9 @@ header {
 }
 .text {
   margin-left: 11em;
+}
+p {
+  padding-right: 25%;
 }
 }
 @media screen and (max-width:599px) {
