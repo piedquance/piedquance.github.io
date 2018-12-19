@@ -20,8 +20,8 @@
       <ul>
         <li id="fade"><a href="#p1">HTML et JavaScript</a></li>
         <li id="fade"><a href="#p2">Valeurs et variables</a></li>
-        <li id="fade"><a href="#p3">Les opérations sur les variables</a></li>
-        <li id="fade"><a href="#"></a></li>
+        <li id="fade"><a href="#p3">Les opérateurs</a></li>
+        <li id="fade"><a href="#p4">Conditionnels et fonctions</a></li>
         <li id="fade"><a href="#"></a></li>
         <li id="fade"><a href="#"></a></li>
         <li id="fade"><a href="#"></a></li>
@@ -91,28 +91,29 @@ y / x;
 14 % 3; //2
 30 % 10; //0
 42 % 13; //3</code></pre>
-    <p>2 autres types d'opérateurs seront présentés dans cette section, les opérateurs d'assignation et les opérateurs de comparaison. Tous les opérateurs d'assignation utilisent le symbole d'assignation = dans leur syntaxe, et comme mentionné précédement, permettent d'assigner une valeur à une variable. En voiçi quelque uns :</p>
-    <pre><code class="lang-javascript">x += y; //Fait l'assignation suivante : x = x + y
+      <p>2 autres types d'opérateurs seront présentés dans cette section, les opérateurs d'assignation et les opérateurs de comparaison. Tous les opérateurs d'assignation utilisent le symbole d'assignation = dans leur syntaxe, et comme mentionné précédement, permettent d'assigner une valeur à une variable. En voiçi quelque uns :</p>
+      <pre><code class="lang-javascript">x += y; //Fait l'assignation suivante : x = x + y
 x -= y; //Fait l'assignation suivante : x = x - y
 x *= y; //Fait l'assignation suivante : x = x * y
 x /= y; //Fait l'assignation suivante : x = x / y
 x %= y; //Fait l'assignation suivante : x = x % y
 x **= y; //Fait l'assignation suivante : x = x ** y</code></pre>
-    <p>Les opérateurs de comparaison servent à, comme leur nom l'indique, comparer 2 opérandes. Il en existe 9, et ils retournent toujours un booléen comme réponse.</p>
-    <pre><code class="lang-javascript">3 == "3"; //true
+      <p>Les opérateurs de comparaison servent à, comme leur nom l'indique, comparer des opérandes. Il en existe 8, et ils retournent toujours un booléen comme réponse.</p>
+      <pre><code class="lang-javascript">3 == "3"; //true
 /*Opérateur d'égalité souple, renvoie true si les opérandes sont égaux.
 Il ne tiens pas compte du type de valeur.*/
 3 != "3"; //false
 /*Opérateur d'inégalité souple, renvoie true si les opérandes ne sont pas égaux.
  Il ne tient également pas compte du type de valeur.*/
 3 === 3; //true
-//Opérateur d'égalité stricte, renvoie true si les opérandes sont égaux et les valeurs de même type.
+/*Opérateur d'égalité stricte, renvoie true si les opérandes
+sont égaux et les valeurs de même type.*/
 3 !== "2"; //true
 /*Opérateur d'inégalité stricte, renvoie true si les opérandes
 ne sont pas égaux ou les valeurs de types différents.*/
 3 > 2; //true
 /*Opérateur de supériorité stricte. Pour des valeurs de même type,
- renvoie true si l'opérande de gauche est supérieur à l'opérande de droit.*/
+renvoie true si l'opérande de gauche est supérieur à l'opérande de droit.*/
 3 >= 3; //true
 /*Opérateur de supériorité ou d'égalité stricte. Pour des valeurs de même type,
 renvoie true si l'opérande de gauche est inférieur à l'opérande de droit.*/
@@ -122,6 +123,8 @@ renvoie true si l'opérande de gauche est supérieur ou égal à l'opérande de 
 3 <= "3"; //false
 /*Opérateur d'infériorité ou d'égalité stricte. Pour des valeurs de même type,
 renvoie true si l'opérande de gauche est inférieur ou égal à l'opérande de droit.*/</code></pre>
+      <h2 id="p4">Conditionnels et fonctions</h2>
+      <p></p>
     </div>
   <script type="text/javascript" src="javascript/cube.js">
   </script>
