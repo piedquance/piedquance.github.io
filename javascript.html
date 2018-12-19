@@ -52,8 +52,8 @@
       <p>Ces guillemets peuvent être simples ou doubles, mais doivent être pareilles. La console envoie une erreur s'ils sont différents. Les valeurs numériques sont affichés par des nombres positifs, négatifs ou décimaux.</p><br>
       <pre><code class="lang-javascript">-2.71828182845904523536</code></pre><br>
       <p>JavaScript permet aussi d'afficher des booléens, des valeurs pouvant seulement être vrais ou fausses.</p><br>
-      <pre><code class="lang-javascript">True
-False</code></pre><br>
+      <pre><code class="lang-javascript">true
+false</code></pre><br>
       <p>Si vous écrivez ces valeurs dans la console, elle vous les renvoie, ne sachant pas pas quoi faire avec. Les valeurs ne sont pas mémorisés par l'ordinateur, il faut pour cela utiliser des variables.</p><br>
       <pre><code class="lang-javascript">var texte = "Bla bla bla";</code></pre><br>
       <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé texte qui a comme valeur "Bla bla bla". Le symbole = est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console.</p><br>
@@ -76,6 +76,8 @@ x * y;
 //Opération de multiplication, retournant 6 comme réponse
 y / x;
 //Opération de division, retournant 1.5  comme réponse
+0 / 0;
+// Retourne NaN (Not a Number)
 1++;
 //Opération d'incrémentation (ajout d'une unité), retournant 2  comme réponse
 1--;
@@ -89,7 +91,37 @@ y / x;
 14 % 3; //2
 30 % 10; //0
 42 % 13; //3</code></pre>
-    <p>2 autres types d'opérateurs seront présentés dans cette section.</p>
+    <p>2 autres types d'opérateurs seront présentés dans cette section, les opérateurs d'assignation et les opérateurs de comparaison. Tous les opérateurs d'assignation utilisent le symbole d'assignation = dans leur syntaxe, et comme mentionné précédement, permettent d'assigner une valeur à une variable. En voiçi quelque uns :</p>
+    <pre><code class="lang-javascript">x += y; //Fait l'assignation suivante : x = x + y
+x -= y; //Fait l'assignation suivante : x = x - y
+x *= y; //Fait l'assignation suivante : x = x * y
+x /= y; //Fait l'assignation suivante : x = x / y
+x %= y; //Fait l'assignation suivante : x = x % y
+x **= y; //Fait l'assignation suivante : x = x ** y</code></pre>
+    <p>Les opérateurs de comparaison servent à, comme leur nom l'indique, comparer 2 opérandes. Il en existe 9, et ils retournent toujours un booléen comme réponse.</p>
+    <pre><code class="lang-javascript">3 == "3"; //true
+/*Opérateur d'égalité souple, renvoie true si les opérandes sont égaux.
+Il ne tiens pas compte du type de valeur.*/
+3 != "3"; //false
+/*Opérateur d'inégalité souple, renvoie true si les opérandes ne sont pas égaux.
+ Il ne tient également pas compte du type de valeur.*/
+3 === 3; //true
+//Opérateur d'égalité stricte, renvoie true si les opérandes sont égaux et les valeurs de même type.
+3 !== "2"; //true
+/*Opérateur d'inégalité stricte, renvoie true si les opérandes
+ne sont pas égaux ou les valeurs de types différents.*/
+3 > 2; //true
+/*Opérateur de supériorité stricte. Pour des valeurs de même type,
+ renvoie true si l'opérande de gauche est supérieur à l'opérande de droit.*/
+3 >= 3; //true
+/*Opérateur de supériorité ou d'égalité stricte. Pour des valeurs de même type,
+renvoie true si l'opérande de gauche est inférieur à l'opérande de droit.*/
+3 < 2; //false
+/*Opérateur d'infériorité stricte. Pour des valeurs de même type,
+renvoie true si l'opérande de gauche est supérieur ou égal à l'opérande de droit.*/
+3 <= "3"; //false
+/*Opérateur d'infériorité ou d'égalité stricte. Pour des valeurs de même type,
+renvoie true si l'opérande de gauche est inférieur ou égal à l'opérande de droit.*/</code></pre>
     </div>
   <script type="text/javascript" src="javascript/cube.js">
   </script>
