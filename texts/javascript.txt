@@ -1,6 +1,6 @@
 [Introduction présentant le World Wide Web, et comment une page web fonctionne de façon générale] //
-[3 types de déclarations(relation/fixeurs(bindings)) avec identifiant, 3 types de valeurs(booléen, nombre, chaîne de caractère(string/corde)]
-[Les opérations sur les variables/ modification de variables]
+[3 types de déclarations(relation/fixeurs(bindings)) avec identifiant, 3 types de valeurs(booléen, nombre, chaîne de caractère(string/corde)] //
+[Les opérations sur les variables/ modification de variables] //
 [Conditionnels et fonctions, ensemble]       print()
 [Objets et tableau(objet Array)]      console.log
 [DOM, un peu de HTML CSS]
