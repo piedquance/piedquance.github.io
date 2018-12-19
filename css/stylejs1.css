@@ -28,7 +28,7 @@ li {
   padding : 1.4em 1em;
 }
 .text {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: "Courier New", Courier, monospace;
   height: 100%;
   padding: 1em 2em;
@@ -73,10 +73,19 @@ canvas {
   display: block;
   margin: auto;
 }
-.center {
-  padding-left: 0%;
+@media screen and (min-width:1000px) {
+p {
+    padding-right: 25%;
+  }
+header {
+    margin-left:5.5em;
+    text-align: center;
+  }
+.text {
+    margin-left: 11em;
+  }
 }
-@media screen and (min-width:600px) {
+@media screen and (max-width:999px) {
 header {
   margin-left:5.5em;
   text-align: center;
@@ -85,16 +94,28 @@ header {
   margin-left: 11em;
 }
 p {
-  padding-right: 25%;
+  padding-right: 10%;
 }
+}
+@media screen and (max-width:799px) {
+  .text {
+    font-size: 1.6em;
+  }
 }
 @media screen and (max-width:599px) {
+.text {
+  font-size: 1.5em;
+}
 header {
   text-align: center;
   margin:auto;
+  margin-left: 0;
 }
 ul {
    display:none;
+}
+.text {
+  margin-left: 1em;
 }
 }
 #fade {
