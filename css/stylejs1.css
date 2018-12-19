@@ -39,6 +39,7 @@ ul {
   height: 100%;
   overflow: auto;
   position: fixed;
+  top: 0.2em;
   background-color: #000;
   color: #fff;
   font-size: 1.5em;
@@ -125,6 +126,7 @@ p {
 @media screen and (max-width:599px) {
 .text {
   font-size: 1.5em;
+    margin-left: 1em;
 }
 header {
   text-align: center;
@@ -133,9 +135,6 @@ header {
 }
 ul {
    display:none;
-}
-.text {
-  margin-left: 1em;
 }
 }
 #fade {
