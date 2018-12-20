@@ -8,9 +8,6 @@ window.addEventListener('scroll', function() {
   document.getElementById("bar").max = max;
   document.getElementById("bar").value = value;
 });
-/*function getOffset(el) {
-return el.getBoundingClientRect().top + window.scrollY;
-}*/
 let p = [document.getElementById("p1"), document.getElementById("p2"),
 document.getElementById("p3"),
 document.getElementById("p4"),
@@ -28,3 +25,13 @@ window.addEventListener("scroll", function() {
     }
   }} catch(TypeError) {}
 });
+var menu = document.getElementById("menu");
+var sticks = menu.offsetTop;
+function sticky() {
+  if (window.pageYOffset >= sticks) {
+    menu.classList.add("stick");
+  } else {
+    menu.classList.remove("stick");
+  }
+}
+window.addEventListener("scroll", function() {sticky()});

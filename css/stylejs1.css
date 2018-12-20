@@ -62,11 +62,16 @@ li {
   letter-spacing:0.1em;
   font-family: "Courier New", Courier, monospace;
 }
-
+.stick {
+  position: fixed;
+  top: 0.4em;
+}
+.stick + body {
+  padding-top: 60px;
+}
 .mobile-menu {
   font-family: "Courier New", Courier, monospace;
   display:none;
-  top : 0;
   right:0;
   width:100%;
 }
