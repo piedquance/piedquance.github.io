@@ -8,3 +8,23 @@ window.addEventListener('scroll', function() {
   document.getElementById("bar").max = max;
   document.getElementById("bar").value = value;
 });
+/*function getOffset(el) {
+return el.getBoundingClientRect().top + window.scrollY;
+}*/
+let p = [document.getElementById("p1"), document.getElementById("p2"),
+document.getElementById("p3"),
+document.getElementById("p4"),
+document.getElementById("p5")];
+let a = [document.getElementById("11"),
+document.getElementById("22"),
+document.getElementById("33"),
+document.getElementById("44"),
+document.getElementById("55")];
+window.addEventListener("scroll", function() {
+  try {
+  for (var v = 0; v <= p.length; v++) {
+    if (window.pageYOffset > p[v+1].getBoundingClientRect().top + window.scrollY) {
+      a[v].style.color = "#aaa"
+    } else a[v].style.color = "#fff"
+  }} catch(TypeError) {}
+});
