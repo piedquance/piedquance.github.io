@@ -50,11 +50,11 @@ li {
 }
 /* Style The Dropdown Button */
 .menu-butt {
-  background-color: #000;
+  background-color: #111;
   color:#fff;
   padding : 0.4em;
   margin:0;
-    font-size:2em;
+  font-size:2em;
   border: none;
   cursor: pointer;
   width:100%;
