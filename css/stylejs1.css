@@ -65,7 +65,6 @@ li {
 
 .mobile-menu {
   font-family: "Courier New", Courier, monospace;
-  position: fixed;
   display:none;
   top : 0;
   right:0;
