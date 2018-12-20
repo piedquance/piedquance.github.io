@@ -216,8 +216,9 @@ p {
 }
 @media screen and (max-width:599px) {
 .text {
-  font-size: 1.5em;
-    margin-left: 1em;
+  font-size: 1.54em;
+  margin-left: 0.5em;
+  padding: 0.2em 0;
 }
 header {
   text-align: center;
