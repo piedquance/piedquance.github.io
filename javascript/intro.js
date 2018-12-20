@@ -25,6 +25,6 @@ window.addEventListener("scroll", function() {
   for (var v = 0; v <= p.length; v++) {
     if (window.pageYOffset > p[v+1].getBoundingClientRect().top + window.scrollY) {
       a[v].style.color = "#aaa"
-    } else a[v].style.color = "#fff"
+    }
   }} catch(TypeError) {}
 });
