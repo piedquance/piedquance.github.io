@@ -5,7 +5,7 @@ body {
 #title {
   color: #fff;
   background-color: #000;
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Courier New";
   font-size: 3em;
   padding: 0.2em 0em;
   text-align: center;
@@ -27,7 +27,7 @@ canvas {
   text-align: center;
   width:100%;
   color:#fff;
-  font-family: "Cutive Mono", Courier, monospace;
+  font-family: 'Inconsolata', monospace;
   margin:auto;
   padding:0.5em 0;
   border:1em;
@@ -37,7 +37,7 @@ canvas {
     color: #aaa;
 }
 #cornerTouch, #youHere {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'Inconsolata', monospace;
       font-size: 1.5em;
       text-align: center;
 }
@@ -49,7 +49,7 @@ nav {
 }
 .menu {
     text-decoration: none;
-    font-family: monospace;
+    font-family: 'Inconsolata', monospace;
     font-size: 2em;
     color: #000;
     letter-spacing: 2px;
@@ -66,7 +66,7 @@ nav {
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Inconsolata', monospace;
   font-size: 1.5em;
   background-color: #ddd;
   width:70%;
@@ -83,7 +83,7 @@ nav {
     background-color: #ddd;
 }
 .info2link {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Inconsolata', monospace;
   font-size: 1.6em;
 }
 .info2link:link {
