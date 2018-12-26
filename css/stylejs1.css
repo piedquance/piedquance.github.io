@@ -78,10 +78,13 @@ li {
 .menu-links {
   display: none;
   position: absolute;
-  background-color: #000;
+  background-color: #000d;
   width: 50%;
   margin-left: 25%;
   font-size:1.4em;
+}
+.mobile-links:hover {
+  color: #3ff936;
 }
 .menu-links .mobile-links {
   padding: 0.8em 1.6em;
@@ -91,7 +94,7 @@ li {
   display: block;
 }
 .mobile-menu:hover .menu-butt {
-  background-color: #444;
+  background-color: #0005;
 }
 .text {
   font-size: 15px;
