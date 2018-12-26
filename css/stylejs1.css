@@ -78,7 +78,7 @@ li {
 .menu-links {
   display: none;
   position: absolute;
-  background-color: #000c;
+  background-color: #000;
   width: 50%;
   margin-left: 25%;
   font-size:1.4em;
@@ -104,7 +104,7 @@ a {
   color: #fff;
 }
 a:hover {
-  color: #aaa;
+  color: #3ff936;
 }
 p {
   margin: 0;
