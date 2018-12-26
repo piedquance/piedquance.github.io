@@ -11,7 +11,8 @@ window.addEventListener('scroll', function() {
 let p = [document.getElementById("p1"), document.getElementById("p2"),
 document.getElementById("p3"),
 document.getElementById("p4"),
-document.getElementById("p5")];
+document.getElementById("p5"),
+document.getElementById("p6")];
 let a = [document.getElementById("11"),
 document.getElementById("22"),
 document.getElementById("33"),
@@ -28,7 +29,7 @@ try {
       this.style.color = "#3ff936";
     });
     a[x].addEventListener("mouseout", function() {
-      asdf(x);
+    asdf(x);
     });
     asdf(x);
   }} catch(TypeError) {}
