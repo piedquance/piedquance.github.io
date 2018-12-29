@@ -131,8 +131,55 @@ renvoie true si l'opérande de gauche est supérieur ou égal à l'opérande de 
 3 <= "3"; //false
 /*Opérateur d'infériorité ou d'égalité stricte. Pour des valeurs de même type,
 renvoie true si l'opérande de gauche est inférieur ou égal à l'opérande de droit.*/</code></pre>
+      <p>0 et "" sont considérés comme false, si transformés en booléen. L'opérateur ! renvoie le contraire d'une valeur booléenne.</p>
       <h2 id="p4">Objets et fonctions</h2>
-      <p></p>
+      <p>Un object, c'est comme un dossier sur votre ordinateur contenant plusieurs fichiers, sauf que les fichiers et le dossier sont des variables. Disons qu'il existe un object nommé Arbre qui contient les variables fruit, taille et âge. Voici comment vous pouvez accéder à leurs valeurs:
+      </p>
+      <pre><code class="lang-javascript">Arbre.fruit;  //Pomme
+Arbre.tailleEnMètres; //10
+Arbre.âge; //50</code></pre>
+      <p>Un object est un type de valeur, il est donc déclaré de la même façon que le reste. On utilise des {} pour indiquer que c'est un object et pour déclarer ses variables.</p>
+      <pre><code class="lang-javascript">var Object = {
+        Propriété1: Valeur1,
+        Propriété2: Valeur2,
+        Propriété3: Valeur3
+        };</code></pre>
+       <p>Il existe d'autres propriétés des objects qui seront expliqués bientôt, mais il faut d'abord faire un détour par les fonctions. En mathématique, une fonction sert à faire des opération précises sur une valeur. C'est la même chose en programmation, mais avec beaucoup plus de possibilités.</p>
+       <pre><code class="lang-javascript">alert("Bonjour!"); //Cette fonction fera apparaitre une alerte qui dira Bonjour!
+prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information.</code></pre>
+      <p>Si vous exécutez ces exemples (ce que je vous conseille de faire), vous verrez que alert() retourne undefined et prompt() retourne la valeur que vous avez entrée. Une fonction peut retourner une valeur, comme le résultat d'une opération, ou juste effectuer une action (ou les deux!). La plupart du temps, elle a besoin d'arguments fournis entre des parenthèses pour faire quelque chose. Voici la syntaxe de déclaration d'une fonction:</p>
+      <pre><code class="lang-javascript">function Addition(Arg1,  Arg2) {
+        var Arg3 = Arg1 + Arg2; //Déclare une variable
+        return Arg3;  //Retourne la variable
+      }</code></pre>
+      <p>Cette fonction prends les 2 valeurs fournis entre parenthèses et retourne le résultat de leur addition.</p>
+      <pre><code class="lang-javascript">Addition(1, 3); //Retourne 4</code></pre>
+      <p>Dans cet exemple, une variable a été créé avec la fonction, et on y a accès partout dans le programme. Si la fonction avait utilisé "let" comme déclarateur de variable, l'accès à la variable aurait été restreint au bloc de code où elle a été créé, délimité par des accolades. Il est possible de créer des fonctions plus complexes avec des conditionnels et des boucles, qui seront expliqués dans la prochaines section.</p>
+      <p>Un object peut contenir une fonction, de la même façon qu'il peut contenir n'importe quel autre type de valeur, y compris un autre object. La syntaxe reste la même.</p>
+      <pre><code class="lang-javascript">let Arbre = {
+fruit: "Pomme",
+tailleEnMètres: 10,
+âge: 50,
+nom: function() {
+      alert("Le nom de l'arbre est Arbre 1.");
+  }
+      };
+
+Arbre.nom();  //Une alerte apparaît</code></pre>
+      <p>La console contient déjà plusieurs fonctions et objets prêts à être utilisés, comme console.log() ou document.getElementById().</p>
+      <pre><code class="lang-javascript">console.log("Hello, World!") //Imprime Hello, World! dans la console
+document.getElementById("id") //Renvoie l'élément HTML "id"</code></pre>
+      <p>Voici une série d'exercices à faire afin de tester les connaissances acquises jusqu'à maintenant.</p>
+      <pre><code class="lang-javascript">//Écrivez une fonction qui imprime une chaîne de charactères en rajoutant "!!!" à la fin.
+Fonction("Exemple");  //"Exemple!!!"
+//Quel sera le résultat de ces comparaisons?
+"3" == 3;
+"0" == false;
+"aha" < "a";
+(2 + (1/3 + 2) * 3) - 3**2  == !true;
+3 * 3 === 8.9999999999999999;
+"true" === true;
+!!"true" === true;</code></pre>
       <h2 id="p5">Conditionnels et boucles</h2>
       <p></p>
       <h2 id="p6"></h2>

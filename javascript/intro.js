@@ -4,7 +4,10 @@ function replace(text) {
 let Arbre = {
   fruit:"Pomme",
   tailleEnMètres:10,
-  âge:50
+  âge:50,
+  nom: function() {
+        alert("Le nom de l'arbre est Arbre 1.");
+    }
 };
 let progress = document.getElementById("bar");
 window.addEventListener('scroll', function() {
