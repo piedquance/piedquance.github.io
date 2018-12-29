@@ -20,12 +20,14 @@ let p = [document.getElementById("p1"), document.getElementById("p2"),
 document.getElementById("p3"),
 document.getElementById("p4"),
 document.getElementById("p5"),
-document.getElementById("p6")];
+document.getElementById("p6"),
+document.getElementById("p7")];
 let a = [document.getElementById("11"),
 document.getElementById("22"),
 document.getElementById("33"),
 document.getElementById("44"),
-document.getElementById("55")];
+document.getElementById("55"),
+document.getElementById("66")];
 function asdf(x) {
   if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY) {  return a[x].style.color = "#aaa"
 } else return a[x].style.color = ""
