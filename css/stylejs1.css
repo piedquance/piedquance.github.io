@@ -146,16 +146,20 @@ canvas {
   margin: auto;
 }
 @media screen and (min-width:1000px) {
-p {
-    padding-right: 25%;
-  }
+
 header {
     margin-left:5.5em;
     text-align: center;
-  }
-  .text {
+}
+.text {
     margin-left: 11em;
-  }
+}
+p {
+      padding-right: 25%;
+}
+hr {
+  margin-right: 25%;
+}
 }
 @media screen and (max-width:999px) {
 header {
@@ -168,19 +172,25 @@ header {
 p {
   padding-right: 10%;
 }
+hr {
+  margin-right: 10%;
+}
 @media screen and (max-width:599px) {
-  p {
-    padding-right:0;
-  }
+  header {
+    text-align: center;
+    margin:auto;
+    margin-left: 0;
+}
 .text {
-  margin: 0;
-  padding:1em 2em;
+    margin: 0;
+    padding:1em 2em;
 
 }
-header {
-  text-align: center;
-  margin:auto;
-  margin-left: 0;
+p {
+    padding-right:0;
+}
+hr {
+  margin-right:0;
 }
 ul {display:none;}
 .mobile-menu {display:block;;}
