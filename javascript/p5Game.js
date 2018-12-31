@@ -31,5 +31,5 @@ if ((x == 0 && y == 0) ||
     (x == 380 && y == 0) ||
     (x == 380 && y == 380)) {
   edgeCount += 1;}
-  edges.innerHTML = "The cube has touched the corner "+edgeCount+" times.";
+  edges.innerHTML = "The square has touched the corner "+edgeCount+" times.";
 }
