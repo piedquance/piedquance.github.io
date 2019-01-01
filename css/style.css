@@ -33,6 +33,11 @@ canvas {
   border:1em;
   background-color: #000;
 }
+
+.timeteam {
+  display:inline;
+  text-align:center;
+}
 #timeContainer:hover {
     color: #aaa;
 }

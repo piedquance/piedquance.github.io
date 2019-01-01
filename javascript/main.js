@@ -9,4 +9,4 @@ function timeHere() {
   if(timeSpent>3600) { document.getElementById("youHere").innerHTML = "You have been here for " + timeSpent + " seconds.<br> It's time to leave."
 } else {document.getElementById("youHere").innerHTML = "You have been here for " + timeSpent + " seconds."};
 }
-body.addEventListener("load", setInterval(whatTimeSeen, 10))
+body.addEventListener("load", setInterval(whatTimeSeen, 10));
