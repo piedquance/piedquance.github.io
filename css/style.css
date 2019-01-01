@@ -33,13 +33,24 @@ canvas {
   border:1em;
   background-color: #000;
 }
-
+#timeContainer:hover {
+    color: #aaa;
+}
 .timeteam {
   display:inline;
   text-align:center;
 }
-#timeContainer:hover {
-    color: #aaa;
+#selectDate {
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+  border: 0;
+  background-color: #000;
+  color:#fff;
+  font-family:  'Inconsolata', monospace;
+  font-size: 16px;
+
+
 }
 #cornerTouch, #youHere {
       font-family: 'Inconsolata', monospace;
