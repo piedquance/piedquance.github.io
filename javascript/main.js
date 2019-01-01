@@ -6,8 +6,10 @@ function whatTimeSeen() {
     let date = new Date();
     document.getElementById("time").innerHTML = date.toLocaleTimeString();
   } else if (select === "year") {
-
-    document.getElementById("time").innerHTML = "yeet"
+    let date1 = new Date();
+    let year = date1.getFullYear() + 1;
+    let date2 = new Date(year + '-01-01 00:00:00');
+    document.getElementById("time").innerHTML =  Math.ceil((date2.getTime() - date1.getTime())/1000) - 1 + " seconds"
   }
 }
 

@@ -21,12 +21,14 @@
 <a href="#" class="menu" id="current">Home</a> <a href="stuff.html" class="menu">Stuff</a> <a href="info.html" class="menu">Info</a>
 </nav>
   <div id="timeContainer">
-    <label for="selectDate">Time</label>
-    <select class="timeteam" id="selectDate">
-      <option value="now" selected>now</option>
-      <option value="year">until next year</option>
+    <div class="timeteam timeLeft">
+      <label for="selectDate">Time</label>
+      <select class="timeteam" id="selectDate">
+        <option value="now" selected>right now</option>
+        <option value="year">until next year</option>
       </select>
-    <p class="timeteam">==></p>
+      <p class="timeteam">==></p>
+    </div>
     <p class="fade, timeteam" id="time">oof</p>
   </div>
     </header>
