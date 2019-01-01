@@ -19,9 +19,17 @@
     <nav>
   <a href="index.html" class="menu">Home</a> <a href="stuff.html" class="menu">Stuff</a> <a href="#" class="menu" id="current">Info</a>
   </nav>
-    <div id="timeContainer">
-    <p class="fade" id="time">  oof</p>
+  <div id="timeContainer">
+    <div class="timeteam timeLeft">
+      <label for="selectDate">Time</label>
+      <select class="timeteam" id="selectDate">
+        <option value="now" selected>right now</option>
+        <option value="year">until next year</option>
+      </select>
+      <p class="timeteam">==></p>
     </div>
+    <p class="fade, timeteam" id="time">oof</p>
+  </div>
   </header>
 
 <article class="info">
