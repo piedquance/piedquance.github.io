@@ -26,10 +26,10 @@ progress::-webkit-progress-bar {
   background-color: #000;
 }
 progress::-webkit-progress-value {
-  background-color: #0f0;
+  background-color: #3ff936;
 }
 progress::-moz-progress-bar {
-  background-color: #0f0;
+  background-color: #3ff936;
 }
 ul {
   list-style-type: none;
