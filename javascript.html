@@ -167,9 +167,15 @@ nom: function() {
       };
 
 Arbre.nom();  //Une alerte apparaît</code></pre>
-      <p>La console contient déjà plusieurs fonctions et objets prêts à être utilisés, comme <code>console.log()</code> ou <code>document.getElementById()</code>.</p>
-      <pre><code class="lang-javascript">console.log("Hello, World!") //Imprime Hello, World! dans la console
-document.getElementById("id") //Renvoie l'élément HTML "id"</code></pre>
+      <p>La console contient déjà plusieurs fonctions et objets prêts à être utilisés, comme <code>console.log()</code> ou <code>setInterval()</code>.</p>
+      <pre><code class="lang-javascript">console.log("Hello, World!");
+//Imprime Hello, World! dans la console
+
+function HW() {
+  console.log("Hello, World!");
+}
+setInterval(HW , 1000);
+//Imprime Hello, World! à chaque seconde (100 millisecondes)</code></pre>
       <p>Voici une série d'exercices à faire afin de tester les connaissances acquises jusqu'à présent.</p>
       <pre><code class="lang-javascript">//Écrivez une fonction qui imprime une chaîne de charactères en rajoutant "!!!" à la fin.
 Fonction("Exemple");  //"Exemple!!!"
@@ -252,7 +258,37 @@ for(let x = 0 ; x < 10 ; x++) {
         color : red;
               }
 /*Cette règle sera appliquée que lorsque la souris sera sur l'élément avec l'id banane.*/</code></pre>
-      <p></p>
+      <p>JavaScript comme langage est assez limité, c'est pourquoi il lui faut utiliser le DOM (Document Object Model) pour interagir avec les pages web. Le DOM est un API (Application Programming Interface), une série de fonctions qui permettent à JavaScript d'intéragir avec une page web, en représentant la page web sous forme de l'objet <code>document</code>. Voici quelques fonctions fournis par le DOM: </p>
+      <pre><code class="lang-javascript">//fonctions pouvant être mises dans une variable
+document.getElementById("id");
+document.getElementsByClassName("nomDeClass");
+//ces fonction retournent le ou les élément(s) associé(s) avec le sélécteur.
+document.addEventListener("action", fonction);
+/*cette fonction active une autre fonction  lorsque qu'une action est faites.
+Liste d'actions courantes:
+"mouseover" : Activée lorsque la sourie est sur l'élément.
+"mouseout" : Activée lorsque la sourie est lors de l'élément.
+"mousemove" : Activée lorsque la sourie bouge.
+"click" : Activée lorsque l'élément est cliqué.
+"scroll" : Activée lorsque la page défile.
+*/</code></pre>
+      <p>Pour finir, je vais vous présenter un programme JavaScript qui utilise le DOM.</p>
+      <pre><code class="lang-javascript">let egg = document.getElementById("eggs");
+//L'élément eggs (le paragraphe en dessous)est mis dans la variable eggs.
+eggs.addEventListener("click", function() {
+//Une fonction est activé lorsque eggs est cliqué.
+  let réponse = prompt("Entrez une couleur parmi les suivantes : cyan ou violet");
+//Une fenête pop-up vous demande une couleur, le choix est mis dans réponse.
+  if(réponse === "cyan") {
+    eggs.style.color = "#00ffff";
+//La couleur du texte sera cyan si réponse est égal à "cyan".
+} else if(réponse === "violet") {
+      eggs.style.color = "#ff00ff";
+//La couleur du texte sera violet si réponse est égal à "violet".
+      } else alert("Vous n'avez pas entré une couleur valide.");
+//Pour toute les autres valeurs de réponse, donner une alerte.
+});</code> </pre>
+      <p id="eggs">Cliquez sur ce paragraphe pour en changer la couleur!</p>
       <h2 id="p7"></h2>
     </div>
   <script type="text/javascript" src="javascript/cube.js">

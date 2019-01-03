@@ -10,7 +10,7 @@ let Arbre = {
     }
 };
 let progress = document.getElementById("bar");
-window.addEventListener('scroll', function() {
+document.addEventListener('scroll', function() {
   let max = document.body.clientHeight - window.innerHeight;
   let value = window.pageYOffset;
   document.getElementById("bar").max = max;
@@ -32,7 +32,7 @@ function asdf(x) {
   if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY - 200) {  return a[x].style.color = "#aaa"
 } else return a[x].style.color = ""
 };
-window.addEventListener("scroll", function() {
+document.addEventListener("scroll", function() {
 try {
   for (let x = 0; x <= p.length; x++) {
     a[x].addEventListener("mouseover", function() {
@@ -53,4 +53,12 @@ function sticky() {
     menu.classList.remove("stick");
   }
 }
-window.addEventListener("scroll", function() {sticky()});
+let egg = document.getElementById("eggs");
+eggs.addEventListener("click", function() {
+let réponse = prompt("Entrez une couleur parmi les suivantes : cyan ou violet");
+if(réponse === "cyan") {
+eggs.style.color = "#00ffff";
+}else if(réponse === "violet") {
+eggs.style.color = "#ff00ff";
+} else alert("Vous n'avez pas entré une couleur valide.");
+});
