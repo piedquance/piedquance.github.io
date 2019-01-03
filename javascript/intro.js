@@ -29,7 +29,7 @@ document.getElementById("44"),
 document.getElementById("55"),
 document.getElementById("66")];
 function asdf(x) {
-  if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY) {  return a[x].style.color = "#aaa"
+  if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY - 200) {  return a[x].style.color = "#aaa"
 } else return a[x].style.color = ""
 };
 window.addEventListener("scroll", function() {
