@@ -107,6 +107,17 @@ li {
   text-decoration: none;
   color: #fff;
 }
+.sites {
+  display:block;
+  text-decoration: none;
+  color:#000;
+}
+.sites:visited {
+  color:#555;
+}
+.sites:hover {
+  color: #3ff936;
+}
 p {
   margin: 0;
 }
