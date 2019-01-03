@@ -121,6 +121,9 @@ h2 {
 #p1 {
   margin-top: 0;
 }
+#r {color:#f00;}
+#g {color:#0f0;}
+#b {color:#00f;}
 button {
     display: flex;
     justify-content: center;
@@ -193,7 +196,7 @@ hr {
   margin-right:0;
 }
 ul {display:none;}
-.mobile-menu {display:block;;}
+.mobile-menu {display:block;}
 }
 #fade {
   margin: 0;

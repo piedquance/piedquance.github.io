@@ -48,11 +48,11 @@
       <br><br>
       Plus précisément HTML et CSS, mais je vais seulement parler d'HTML pour l'instant. HTML (Hypertext Markup Language) est un langage de balises, appelé en anglais un <i>markup language</i>. Les fichiers .html servent à afficher le contenu des pages web. Chaque élément dans un fichier .html suit le format suivant :</p><br>
       <pre><code class="lang-html">&ltbalise attribut="valeur"&gtcontenu&lt/balise&gt</code></pre><br>
-      <p id="banane">Le navigateur web affiche seulement le texte noir sur l'écran, le reste sert à la structure. Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises   &ltp&gt et   &lt/p&gt, qui veulent dire paragraphe. Il a aussi un attribut id="banane", cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
+      <p id="banane">Le navigateur web affiche seulement le texte noir sur l'écran, le reste sert à la structure. Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises <code>&ltp&gt</code> et <code>&lt/p&gt</code>, qui veulent dire paragraphe. Il a aussi un attribut  <code>id="banane"</code>, cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
       <pre><code class="lang-javascript">document.getElementById("banane").innerHTML = "Vous pouvez changer ce texte si vous voulez."</code></pre><br>
-      <p>Si bien écrite, cette commande devrait changer le paragraphe précédent par le texte que vous avez mis entre guillemets. "document" est le nom donné au fichier .html (En d'autres mots, la page web). "getElementById" est une fonction qui requiert une valeur afin de donner un résultat. La valeur dans ce cas-là est "banane", et le résultat de la fonction est l'élément ayant l'identifiant "banane". Finalement, innerHTML permet d'accéder au contenu de l'élément. Si vous entrez la commande sans le signe d'égalité et le texte de droite, la console vous renvoie le contenu de l'élément.</p>
+      <p>Si bien écrite, cette commande devrait changer le paragraphe précédent par le texte que vous avez mis entre guillemets. <code>document</code> est le nom donné au fichier .html (En d'autres mots, la page web). <code>getElementById</code> est une fonction qui requiert une valeur afin de donner un résultat. La valeur dans ce cas-là est <code>"banane"</code>, et le résultat de la fonction est l'élément ayant l'identifiant "banane". Finalement, <code>innerHTML</code> permet d'accéder au contenu de l'élément. Si vous entrez la commande sans le signe d'égalité et le texte de droite, la console vous renvoie le contenu de l'élément.</p>
       <button id="butt" onclick=replace(document.getElementById("banane"))>Cliquez içi pour remettre le texte.</button>
-      <p>Ce bouton fonctionne de la même manière. Il a un attribut "onclick" dont la valeur est une fonction JavaScript. Lorsque le bouton est appuyé, cette fonction replace le paragraphe avec le texte original. En utilisant JavaScript, il est possible de rendre une page web plus dynamique et interactive. Voici un autre exemple de son utilisation :</p>
+      <p>Ce bouton fonctionne de la même manière. Il a un attribut <code>onclick</code> dont la valeur est une fonction JavaScript. Lorsque le bouton est appuyé, cette fonction replace le paragraphe avec le texte original. En utilisant JavaScript, il est possible de rendre une page web plus dynamique et interactive. Voici un autre exemple de son utilisation :</p>
       <div id="cube"></div>
       <p>Toutefois, avant de pouvoir faire cela et plus encore, il vous faudra apprendre les bases de JavaScript.</p>
       <h2 id="p2">Valeurs et variables</h2>
@@ -65,10 +65,10 @@
 false</code></pre><br>
       <p>Si vous écrivez ces valeurs dans la console, elle vous les renvoie, ne sachant pas pas quoi faire avec. Les valeurs ne sont pas mémorisés par l'ordinateur, il faut pour cela utiliser des variables.</p><br>
       <pre><code class="lang-javascript">var texte = "Bla bla bla";</code></pre><br>
-      <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé texte qui a comme valeur "Bla bla bla". Le symbole = est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console.</p><br>
+      <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé <code>texte</code> qui a comme valeur <code>"Bla bla bla"</code>. Le symbole <code>=</code> est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console.</p><br>
       <pre><code class="lang-javascript">texte;
 //L'ordinateur envoie "Bla bla bla" comme réponse.</code></pre><br>
-      <p>Après qu'une variable a été créé, elle peut être modifié avec l'opérateur d'assignation. L'identifiant d'une variable ne peut pas commencer par un chiffre ou avoir des espaces. Il existe 3 types de déclarations de variables dans JavaScript : var, let et const.<br><b>var</b> déclare une variable pouvant être modifié et accessible partout dans le code.<br><b>let</b> déclare une varable pouvant être modifié, mais dont l'accès est restreint au bloc où elle a été créé. Cela sera expliqué plus amplement plus tard.<br><b>const</b> déclare une variable non modifiable auquelle l'accès est également restreint au bloc où elle a été créé.</p>
+      <p>Après qu'une variable a été créé, elle peut être modifié avec l'opérateur d'assignation. L'identifiant d'une variable ne peut pas commencer par un chiffre ou avoir des espaces. Il existe 3 types de déclarations de variables dans JavaScript : <code>var</code>, <code>let</code> et <code>const</code>. <br><b><code>var</code></b> déclare une variable pouvant être modifié et accessible partout dans le code.<br><b><code>let</code></b> déclare une varable pouvant être modifié, mais dont l'accès est restreint au bloc où elle a été créé. Cela sera expliqué plus amplement plus tard.<br><b><code>const</code></b> déclare une variable non modifiable auquelle l'accès est également restreint au bloc où elle a été créé.</p>
       <p>En guise d'exercice, vous pouvez essayer de créer quelques variables avec la console et d'assigner une variable à une autre.</p>
       <h2 id="p3">Les opérateurs</h2>
       <p>Javascript est capable de résoudre plusieurs types d'opérations, incluant les opérations d'arithmétie :</p>
@@ -100,7 +100,7 @@ y / x;
 14 % 3; //2
 30 % 10; //0
 42 % 13; //3</code></pre>
-      <p>2 autres types d'opérateurs seront présentés dans cette section, les opérateurs d'assignation et les opérateurs de comparaison. Tous les opérateurs d'assignation utilisent le symbole d'assignation = dans leur syntaxe, et comme mentionné précédement, permettent d'assigner une valeur à une variable. En voiçi quelque uns :</p>
+      <p>2 autres types d'opérateurs seront présentés dans cette section, les opérateurs d'assignation et les opérateurs de comparaison. Tous les opérateurs d'assignation utilisent le symbole d'assignation <code>=</code> dans leur syntaxe, et comme mentionné précédement, permettent d'assigner une valeur à une variable. En voiçi quelque uns :</p>
       <pre><code class="lang-javascript">x += y; //Fait l'assignation suivante : x = x + y
 x -= y; //Fait l'assignation suivante : x = x - y
 x *= y; //Fait l'assignation suivante : x = x * y
@@ -132,14 +132,14 @@ renvoie true si l'opérande de gauche est supérieur ou égal à l'opérande de 
 3 <= "3"; //false
 /*Opérateur d'infériorité ou d'égalité stricte. Pour des valeurs de même type,
 renvoie true si l'opérande de gauche est inférieur ou égal à l'opérande de droit.*/</code></pre>
-      <p>0, "", NaN, null et undefined sont considérés comme false, si transformés en booléen. L'opérateur ! renvoie le contraire d'une valeur booléenne.</p>
+      <p><code>0</code>, <code>""</code>, <code>NaN</code>, <code>null</code> et <code>undefined</code> sont considérés comme <code>false</code>, si transformés en booléen. L'opérateur ! renvoie le contraire d'une valeur booléenne.</p>
       <h2 id="p4">Objets et fonctions</h2>
-      <p>Un object, c'est comme un dossier sur votre ordinateur contenant plusieurs fichiers, sauf que les fichiers et le dossier sont des variables. Disons qu'il existe un object nommé Arbre qui contient les variables fruit, taille et âge. Voici comment vous pouvez accéder à leurs valeurs:
+      <p>Un object, c'est comme un dossier sur votre ordinateur contenant plusieurs fichiers, sauf que les fichiers et le dossier sont des variables. Disons qu'il existe un object nommé <code>Arbre</code> qui contient les variables <code>fruit</code>, <code>taille</code> et <code>âge</code>. Voici comment vous pouvez accéder à leurs valeurs:
       </p>
       <pre><code class="lang-javascript">Arbre.fruit;  //Pomme
 Arbre.tailleEnMètres; //10
 Arbre.âge; //50</code></pre>
-      <p>Un object est un type de valeur, il est donc déclaré de la même façon que le reste. On utilise des {} pour indiquer que c'est un object et pour déclarer ses variables.</p>
+      <p>Un object est un type de valeur, il est donc déclaré de la même façon que le reste. On utilise des <code>{}</code> pour indiquer que c'est un object et pour déclarer ses variables.</p>
       <pre><code class="lang-javascript">var Object = {
         Propriété1: Valeur1,
         Propriété2: Valeur2,
@@ -148,14 +148,14 @@ Arbre.âge; //50</code></pre>
        <p>Il existe d'autres propriétés des objects qui seront expliqués bientôt, mais il faut d'abord faire un détour par les fonctions. En mathématique, une fonction sert à faire des opération précises sur une valeur. C'est la même chose en programmation, mais avec beaucoup plus de possibilités.</p>
        <pre><code class="lang-javascript">alert("Bonjour!"); //Cette fonction fera apparaitre une alerte qui dira Bonjour!
 prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information.</code></pre>
-      <p>Si vous exécutez ces exemples (ce que je vous conseille de faire), vous verrez que alert() retourne undefined et prompt() retourne la valeur que vous avez entrée. Une fonction peut retourner une valeur, comme le résultat d'une opération, ou juste effectuer une action (ou les deux!). La plupart du temps, elle a besoin d'arguments fournis entre des parenthèses pour faire quelque chose. Voici la syntaxe de déclaration d'une fonction:</p>
+      <p>Si vous exécutez ces exemples (ce que je vous conseille de faire), vous verrez que <code>alert()</code> retourne <code>undefined</code> et <code>prompt()</code> retourne la valeur que vous avez entrée. Une fonction peut retourner une valeur, comme le résultat d'une opération, ou juste effectuer une action (ou les deux!). La plupart du temps, elle a besoin d'arguments fournis entre des parenthèses pour faire quelque chose. Voici la syntaxe de déclaration d'une fonction:</p>
       <pre><code class="lang-javascript">function Addition(Arg1,  Arg2) {
         var Arg3 = Arg1 + Arg2; //Déclare une variable
         return Arg3;  //Retourne la variable
       }</code></pre>
       <p>Cette fonction prends les 2 valeurs fournis entre parenthèses et retourne le résultat de leur addition.</p>
       <pre><code class="lang-javascript">Addition(1, 3); //Retourne 4</code></pre>
-      <p>Dans cet exemple, une variable a été créé avec la fonction, et on y a accès partout dans le programme. Si la fonction avait utilisé "let" comme déclarateur de variable, l'accès à la variable aurait été restreint au bloc de code où elle a été créé, délimité par des accolades. Il est possible de créer des fonctions plus complexes avec des conditionnels et des boucles, qui seront expliqués dans la prochaines section.</p>
+      <p>Dans cet exemple, une variable a été créé avec la fonction, et on y a accès partout dans le programme. Si la fonction avait utilisé <code>let</code> comme déclarateur de variable, l'accès à la variable aurait été restreint au bloc de code où elle a été créé, délimité par des accolades. Il est possible de créer des fonctions plus complexes avec des conditionnels et des boucles, qui seront expliqués dans la prochaines section.</p>
       <p>Un object peut contenir une fonction, de la même façon qu'il peut contenir n'importe quel autre type de valeur, y compris un autre object. La syntaxe reste la même.</p>
       <pre><code class="lang-javascript">let Arbre = {
 fruit: "Pomme",
@@ -167,7 +167,7 @@ nom: function() {
       };
 
 Arbre.nom();  //Une alerte apparaît</code></pre>
-      <p>La console contient déjà plusieurs fonctions et objets prêts à être utilisés, comme console.log() ou document.getElementById().</p>
+      <p>La console contient déjà plusieurs fonctions et objets prêts à être utilisés, comme <code>console.log()</code> ou <code>document.getElementById()</code>.</p>
       <pre><code class="lang-javascript">console.log("Hello, World!") //Imprime Hello, World! dans la console
 document.getElementById("id") //Renvoie l'élément HTML "id"</code></pre>
       <p>Voici une série d'exercices à faire afin de tester les connaissances acquises jusqu'à présent.</p>
@@ -197,7 +197,7 @@ Fonction("Exemple");  //"Exemple!!!"
       } else {
       console.log("Faites un pas vers l'arrière.");
       }</code></pre>
-      <p>if, else if et else sont ces conditionnels. Ils peuvent parfois utiliser dans leurs conditions les symboles && et || (ET et OU, respectivement).</p>
+      <p><code>if</code>, <code>else if</code> et <code>else</code> sont ces conditionnels. Ils peuvent parfois utiliser dans leurs conditions les symboles <code>&&</code> et <code>||</code> (ET et OU, respectivement).</p>
       <pre><code class="lang-javascript">let foo = 4;
 if(foo == 4 && true) {
   let fooo = 2;
@@ -205,11 +205,11 @@ if(foo == 4 && true) {
 console.log(fooo);
 </code></pre>
       <p>Analysons cet exemple afin de mieux comprendre les conditionnels...</p>
-      <p><b>*</b> Une variable globale "foo" est déclarée, ayant comme valeur 4.<br>
-        <b>*</b> Une déclaration if va exécuter son code seulement si foo est égale à 4 ET "true" est égale à "true". Ces 2 conditions sont vrai, donc le code est exécuté et une nouvelle variable est déclaré, ayant une valeur de 2.<br>
-        <b>*</b> console.log() essaye d'imprimer la valeur de bar dans la console.<br>
-        <b>*</b> Aha! console.log() n'a pas accès à bar, parce que bar est une variable locale, auquelle l'accès est restreint au bloc de code où elle a été créé (à cause de la déclaration let).<br>
-        <b>*</b> Uncaught ReferenceError: fooo is not defined, fin du programme.<br>
+      <p><b>*</b> Une variable globale <code>foo</code> est déclarée, ayant comme valeur <code>4</code>.<br>
+        <b>*</b> Une déclaration if va exécuter son code seulement si <code>foo</code> est égale à <code>4</code> ET <code>true</code> est égale à <code>true</code>. Ces 2 conditions sont vrai, donc le code est exécuté et une nouvelle variable est déclaré, ayant une valeur de <code>2</code>.<br>
+        <b>*</b> <code>console.log()</code> essaye d'imprimer la valeur de <code>fooo</code> dans la console.<br>
+        <b>*</b> Aha! <code>console.log()</code> n'a pas accès à <code>fooo</code>, parce que <code>fooo</code> est une variable locale, auquelle l'accès est restreint au bloc de code où elle a été créé (à cause de la déclaration <code>let</code>).<br>
+        <b>*</b> <code>Uncaught ReferenceError: fooo is not defined</code>, fin du programme.<br>
        </p>
        <p>Une boucle fonctionne de la même manière qu'un conditionnel, seulement que le code à l'intérieur de la boucle continuera d'exécuter tant que la condition sera vraie.</p>
        <pre><code class="lang-javascript">while(true) {
@@ -222,12 +222,12 @@ while(xx < 10) {
   xx++;
 }
 //tous les chiffres naturels existants seront imprimés</code></pre>
-      <p>Une variante de cette boucle est la boucle do/while, où le code est exécuté la première fois avant que la condition ne soit verifiée.</p>
+      <p>Une variante de cette boucle est la boucle <code>do/while</code>, où le code est exécuté la première fois avant que la condition ne soit verifiée.</p>
       <pre><code class="lang-javascript">do {
   console.log("Cette phrase est fausse.");
   } while(false);</code></pre>
       <p>Dans cet exemple, la phrase sera imprimée lors de la première itération, la condition n'étant vérifiée que seulement après.</p>
-      <p>Une forme de boucle plus complexe, mais beaucoup plus efficace, est la boucle for. Elle fonctionne à partir d'une série de trois déclarations/conditions, séparés par des points-virgules. La première déclare une variable qui servira de compteur pour la boucle, la deuxième regarde si une condition concernant cette variable est respectée afin de continuer la boucle et la troisième effectue une opération sur la varaible.</p>
+      <p>Une forme de boucle plus complexe, mais beaucoup plus efficace, est la boucle <code>for</code>. Elle fonctionne à partir d'une série de trois déclarations/conditions, séparés par des points-virgules. La première déclare une variable qui servira de compteur pour la boucle, la deuxième regarde si une condition concernant cette variable est respectée afin de continuer la boucle et la troisième effectue une opération sur la varaible.</p>
       <pre><code class="lang-javascript">for(let x = 0; //déclaration du conmpteur
        x < 10; //condition à respecter
           x++) //opération effectué après chaque itération
@@ -240,6 +240,14 @@ for(let x = 0 ; x < 10 ; x++) {
 }</code></pre>
       <p>Avant de passer à la dernière section, vous devriez avoir une connaissance passive des termes suivant: valeur, variable , déclaration, opérateur, opérande, objet, fonction, conditionnel et boucle. Si vous êtes encore incertain du sens de certains de ces termes, vous pouvez relire à votre guise les sections précédentes après avois pris ou non une pause. Rien ne presse.</p>
       <h2 id="p6">CSS et le DOM</h2>
+      <p>Vous souvenez-vous de la mention passante de CSS au début de ce document? Il est venu temps d'en parler plus en détail.</p>
+      <p>CSS (Cascading Style Sheets) est un langage de style, qui sert à modifier l'apparence d'éléments sur une page web. Voici la syntaxe CSS à utiliser pour changer la couleur de tout les paragraphes en vert: </p>
+      <pre><code class="lang-css">p {
+  color:#00ff00;
+  }</code></pre>
+      <p>Cette règle est composée d'un sélecteur et d'une déclaration. Le sélecteur spécifie l'élément(s) sur lequel(lesquels) le style sera appliqué (dans ce cas, tous les éléments <code>p</code>). La déclaration est composée d'une propriété et d'une valeur. Chaque élément HTML a des propriétés qui régissent son apparence. En changeant la valeur de certaines propriétés, on change l'apparence et le comportement des éléments associés.</p>
+      <p>CSS utilise la notation hexadécimal pour identifier les couleurs. Chaque couleur a une valeur, représenté par une série de 6 chiffres et lettres allant de a à f. Ces unités sont séparés en trois paires de 2 unités, représentant les teints rouge, verts et bleus de la couleur. <code>#000000</code> est la couleur noire et <code>#ffffff</code> est la couleur blanche. <code id="r">#ff0000</code>, <code id="g">#00ff00</code> et <code id="b">#0000ff</code> sont rouge, vert et bleu respectivement.</p>
+      <p>Il existe des sélécteurs plus précis pour les éléments HTML ayant un identifiant et/ou une classe (une classe est définie par l'attibut <code>class = "valeur"</code>, et peut être partagée par plusieurs éléments). Le sélecteur d'une classe <code>texte</code> est <code>.texte {}</code> et le sélecteur d'un identifiant <code>titre</code> est <code>#titre {}</code>. </p>
       <h2 id="p7"></h2>
     </div>
   <script type="text/javascript" src="javascript/cube.js">
