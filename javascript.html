@@ -227,6 +227,18 @@ while(xx < 10) {
   console.log("Cette phrase est fausse.");
   } while(false);</code></pre>
       <p>Dans cet exemple, la phrase sera imprimée lors de la première itération, la condition n'étant vérifiée que seulement après.</p>
+      <p>Une forme de boucle plus complexe, mais beaucoup plus efficace, est la boucle for. Elle fonctionne à partir d'une série de trois déclarations/conditions, séparés par des points-virgules. La première déclare une variable qui servira de compteur pour la boucle, la deuxième regarde si une condition concernant cette variable est respectée afin de continuer la boucle et la troisième effectue une opération sur la varaible.</p>
+      <pre><code class="lang-javascript">for(let x = 0; //déclaration du conmpteur
+       x < 10; //condition à respecter
+          x++) //opération effectué après chaque itération
+  {
+  console.log(x)
+  }
+//Version condensée
+for(let x = 0 ; x < 10 ; x++) {
+  console.log(x);
+}</code></pre>
+      <p>Avant de passer à la dernière section, vous devriez avoir une connaissance passive des termes suivant: valeur, variable , déclaration, opérateur, opérande, objet, fonction, conditionnel et boucle. Si vous êtes encore incertain du sens de certains de ces termes, vous pouvez relire à votre guise les sections précédentes après avois pris ou non une pause. Rien ne presse.</p>
       <h2 id="p6">CSS et le DOM</h2>
       <h2 id="p7"></h2>
     </div>
