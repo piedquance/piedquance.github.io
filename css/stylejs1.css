@@ -103,7 +103,7 @@ li {
   padding: 1em 2em;
   text-align: justify;
 }
-a {
+#a1, #a2, #a3, #a4, #a5, #a6 {
   text-decoration: none;
   color: #fff;
 }

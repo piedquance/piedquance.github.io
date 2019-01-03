@@ -22,12 +22,12 @@ document.getElementById("p4"),
 document.getElementById("p5"),
 document.getElementById("p6"),
 document.getElementById("p7")];
-let a = [document.getElementById("11"),
-document.getElementById("22"),
-document.getElementById("33"),
-document.getElementById("44"),
-document.getElementById("55"),
-document.getElementById("66")];
+let a = [document.getElementById("a1"),
+document.getElementById("a2"),
+document.getElementById("a3"),
+document.getElementById("a4"),
+document.getElementById("a5"),
+document.getElementById("a6")];
 function asdf(x) {
   if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY - 200) {  return a[x].style.color = "#aaa"
 } else return a[x].style.color = ""
