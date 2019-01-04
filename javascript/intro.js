@@ -10,7 +10,7 @@ let Arbre = {
     }
 };
 let progress = document.getElementById("bar");
-document.addEventListener('scroll', function() {
+window.addEventListener('scroll', function() {
   let max = document.body.clientHeight - window.innerHeight;
   let value = window.pageYOffset;
   document.getElementById("bar").max = max;
@@ -53,12 +53,28 @@ function sticky() {
     menu.classList.remove("stick");
   }
 }
+document.addEventListener("scroll", sticky);
 let egg = document.getElementById("eggs");
 eggs.addEventListener("click", function() {
 let réponse = prompt("Entrez une couleur parmi les suivantes : cyan ou violet");
 if(réponse === "cyan") {
 eggs.style.color = "#00ffff";
-}else if(réponse === "violet") {
+} else if(réponse === "violet") {
 eggs.style.color = "#ff00ff";
 } else alert("Vous n'avez pas entré une couleur valide.");
 });
+//code for Défis
+function editor() {
+  let js = document.getElementById("js");
+  var code = document.getElementById("code").contentWindow.document;
+  document.body.onkeyup = function() {
+    code.open();
+    code.writeln(
+        "<p id=\"p\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><script>" +
+        js.value +
+        "</script>");
+    code.close();
+  };
+}
+
+editor();

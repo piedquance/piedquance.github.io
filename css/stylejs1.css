@@ -83,6 +83,10 @@ li {
   margin-left: 25%;
   font-size:1.4em;
 }
+.mobile-links {
+  color:#fff;
+  text-decoration: none;
+}
 .mobile-links:hover {
   color: #3ff936;
 }
@@ -158,6 +162,25 @@ button:hover {
 canvas {
   display: block;
   margin: auto;
+}
+/*Styling for Défis*/
+textarea {
+  position: relative;
+  max-width: 100%;
+  min-width: 100%;
+  max-height:150px;
+  min-height:150px;
+  background: #f4f4f9 ;
+  padding:none;
+  border:none;
+}
+iframe {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 15em;
+  padding:0;
+  border:1px;
 }
 @media screen and (min-width:1000px) {
 
