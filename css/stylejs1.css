@@ -139,6 +139,7 @@ h2 {
 #g {color:#0f0;}
 #b {color:#00f;}
 button {
+    display: block;
     margin: 1em auto;
     border: none;
     padding: 1em 1em;
