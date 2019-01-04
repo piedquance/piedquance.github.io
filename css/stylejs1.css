@@ -31,7 +31,7 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: #3ff936;
 }
-ul {
+.nav {
   list-style-type: none;
   margin: 0;
   padding: 3em 0;
@@ -46,7 +46,7 @@ ul {
   font-size: 1.5em;
   font-family: "Inconsolata", monospace;
 }
-li {
+.nav2 {
   padding : 1.4em 1em;
 }
 .menu-butt {
@@ -56,9 +56,8 @@ li {
   margin:0;
   font-size:2em;
   border: none;
-  cursor: pointer;
   width:100%;
-  text-align:left;
+  text-align:center;
   letter-spacing:0.1em;
   font-family: "Courier New", Courier, monospace;
 }
@@ -140,12 +139,9 @@ h2 {
 #g {color:#0f0;}
 #b {color:#00f;}
 button {
-    display: flex;
-    justify-content: center;
     margin: 1em auto;
     border: none;
     padding: 1em 1em;
-    text-decoration: none;
     background: #444;
     color: #fff;
     font-family: "Courier New", Courier, monospace;
@@ -171,6 +167,7 @@ textarea {
   max-height:150px;
   min-height:150px;
   background: #f4f4f9 ;
+  font-size: 1em;
   padding:none;
   border:none;
 }
@@ -181,6 +178,22 @@ iframe {
   height: 15em;
   padding:0;
   border:1px;
+}
+#codeInput {
+  margin: none;
+  border: none;
+  padding: 0.1em 0;
+  width: 100%;
+  background: #444;
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+  font-size: 1em;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+}
+#codeInput:hover {
+      background: #666;
 }
 @media screen and (min-width:1000px) {
 
@@ -229,7 +242,7 @@ p {
 hr {
   margin-right:0;
 }
-ul {display:none;}
+.nav {display:none;}
 .mobile-menu {display:block;}
 }
 #fade {

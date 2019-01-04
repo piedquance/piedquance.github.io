@@ -15,15 +15,15 @@
   <body>
     <progress id="bar" value="0" max="1"></progress>
     <nav>
-      <ul>
-        <li id="fade"><a href="#p1" id="a1">HTML et JavaScript</a></li>
-        <li id="fade"><a href="#p2" id="a2">Valeurs et variables</a></li>
-        <li id="fade"><a href="#p3" id="a3">Les opérateurs</a></li>
-        <li id="fade"><a href="#p4" id="a4">Objets et fonctions</a></li>
-        <li id="fade"><a href="#p5" id="a5">Conditionnels et boucles</a></li>
-        <li id="fade"><a href="#p6" id="a6">CSS et le DOM</a></li>
-        <li id="fade"><a href="#"></a></li>
-        <li id="fade"><a href="#"></a></li>
+      <ul class="nav">
+        <li class="nav2" id="fade"><a href="#p1" id="a1">HTML et JavaScript</a></li>
+        <li class="nav2" id="fade"><a href="#p2" id="a2">Valeurs et variables</a></li>
+        <li class="nav2" id="fade"><a href="#p3" id="a3">Les opérateurs</a></li>
+        <li class="nav2" id="fade"><a href="#p4" id="a4">Objets et fonctions</a></li>
+        <li class="nav2" id="fade"><a href="#p5" id="a5">Conditionnels et boucles</a></li>
+        <li class="nav2" id="fade"><a href="#p6" id="a6">CSS et le DOM</a></li>
+        <li class="nav2" id="fade"><a href="#"></a></li>
+        <li class="nav2" id="fade"><a href="#"></a></li>
       </ul>
     </nav>
     <header>
@@ -253,7 +253,7 @@ for(let x = 0 ; x < 10 ; x++) {
   }</code></pre>
       <p>Cette règle est composée d'un sélecteur et d'une déclaration. Le sélecteur spécifie l'élément(s) sur lequel(lesquels) le style sera appliqué (dans ce cas, tous les éléments <code>p</code>). La déclaration est composée d'une propriété et d'une valeur. Chaque élément HTML a des propriétés qui régissent son apparence. En changeant la valeur de certaines propriétés, on change l'apparence et le comportement des éléments associés.</p>
       <p>CSS utilise la notation hexadécimal pour identifier les couleurs. Chaque couleur a une valeur, représenté par une série de 6 chiffres et lettres allant de a à f. Ces unités sont séparés en trois paires de 2 unités, représentant les teints rouge, verts et bleus de la couleur. <code>#000000</code> est la couleur noire et <code>#ffffff</code> est la couleur blanche. <code id="r">#ff0000</code>, <code id="g">#00ff00</code> et <code id="b">#0000ff</code> sont rouge, vert et bleu respectivement.</p>
-      <p>Il existe des sélécteurs plus précis pour les éléments HTML ayant un identifiant et/ou une classe (une classe est définie par l'attibut <code>class = "valeur"</code>, et peut être partagée par plusieurs éléments). Le sélecteur d'une classe <code>texte</code> est <code>.texte {}</code> et le sélecteur d'un identifiant <code>titre</code> est <code>#titre {}</code>. Il y a beaucoup d'autres types de déclarations CSS, comme <code>size = 16px;</code> (grandeur du texte) ou <code>background-color = #00f;</code> (couleur de l'arrière-plan). Une règle CSS peut être écrite de telle sorte qu'elle ne soit appliquée que lorsque l'élément associé est dans un état spécifique.</p>
+      <p>Il existe des sélécteurs plus précis pour les éléments HTML ayant un identifiant et/ou une classe (une classe est définie par l'attibut <code>class = "valeur"</code>, et peut être partagée par plusieurs éléments). Le sélecteur d'une classe <code>texte</code> est <code>.texte {}</code> et le sélecteur d'un identifiant <code>titre</code> est <code>#titre {}</code>. Il y a beaucoup d'autres types de déclarations CSS, comme <code>size = 16px;</code> (grandeur du texte), <code>background-color = #00f;</code> (couleur de l'arrière-plan) ou <code>font-family = monospace</code> (police de caractères). Une règle CSS peut être écrite de telle sorte qu'elle ne soit appliquée que lorsque l'élément associé est dans un état spécifique.</p>
       <pre><code class="lang-css">#banane:hover {
         color : red;
               }
@@ -298,8 +298,17 @@ eggs.addEventListener("click", function() {
       <br>
       <a href="https://p5js.org/" target="_blank" class="sites">Une bibliothèque JavaScript pour coder des graphiques 2D et 3D (en anglais)</a>
       <h2>Défis</h2>
+      <p>En dessous de l'éditeur est un paragraphe avec l'identifiant <code>p</code>. Voud devez accomplir les défis suivants avec JavaScript :</p>
+      <ul>
+        <li>Aggrandir le texte à 24 pixels et changer le fontFamily à arial</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div class="défi">
      <textarea id="js" placeholder="Écrivez votre code içi"></textarea>
+     <input type="button" name="" value="Lancer le programme" id="codeInput">
      <iframe id="code"></iframe>
       </div>
     </div>
