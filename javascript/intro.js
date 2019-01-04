@@ -97,7 +97,7 @@ eggs.style.color = "#ff00ff";
 })();
 //color picker code
 let col = [
-{label:"#textl", input:"#text", ele:"p", base:"#000000", backrnd:false},
+{label:"#textl", input:"#text", ele:"p, li", base:"#000000", backrnd:false},
 {label:"#stl", input:"#st", ele:"h2", base:"#3ff936", backrnd:false},
 {label:"#tl", input:"#t", ele:"header", base:"#ffffff", backrnd:false},
 {label:"#cl", input:"#c", ele:".nav, header", base:"#000000", backrnd:true},
