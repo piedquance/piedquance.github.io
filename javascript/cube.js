@@ -9,7 +9,7 @@ function setup() {
 function draw() {
     rotateX(x);
     rotateY(y);
-    background(255);
+    background(0, 0);
     fill(0,255,100,100);
 		stroke(5);
     box(sketchS/2);
