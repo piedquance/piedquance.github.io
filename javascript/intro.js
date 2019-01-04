@@ -29,6 +29,7 @@ for(let x = 1; x <= 7; x++) {
   a.push(document.getElementById(xD));
 }
 a.pop();
+
 //function that colors grey passed links
 function asdf(x) {
   if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY - 200) {  return a[x].style.color = "#aaa"
@@ -95,26 +96,27 @@ eggs.style.color = "#ff00ff";
   };
 })();
 //color picker code
-var text;
-var defaultColor = "#000000";
-document.getElementById("textl").style.color = defaultColor;
+let col = [
+{label:"#textl", input:"#text", ele:"p", base:"#000000", backrnd:false},
+{label:"#stl", input:"#st", ele:"h2", base:"#3ff936", backrnd:false},
+{label:"#tl", input:"#t", ele:"header", base:"#ffffff", backrnd:false},
+{label:"#cl", input:"#c", ele:".nav, header", base:"#000000", backrnd:true},
+{label:"#Cl", input:"#C", ele:"body", base:"#ffffff", backrnd:true}
+];
+
 window.addEventListener("load", startup);
 function startup() {
-  text = document.querySelector("#text");
-  text.value = defaultColor;
-  text.addEventListener("input", updateFirst);
-  text.addEventListener("change", updateAll);
-  text.select();
-}
-function updateFirst(event) {
-  var p = document.querySelector("p");
-  if (p) {
-    p.style.color = defaultColor;
-  }
-}
-function updateAll(event) {
-  document.querySelectorAll("p").forEach(function(p) {
-    p.style.color = event.target.value;
+  for(let x = 0; x<col.length;x++) {
+    document.querySelector(col[x].label).style.color = col[x].base;
+  col[x].color = document.querySelector(col[x].input);
+  col[x].color.addEventListener("change", function(event) {
+  document.querySelectorAll(col[x].ele).forEach(function(p) {
+    if(col[x].backrnd) {
+      p.style.backgroundColor = event.target.value;
+    } else p.style.color = event.target.value;
   });
-  document.getElementById("textl").style.color = event.target.value;
+  document.querySelector(col[x].label).style.color = event.target.value;
+});
+  col[x].color.select();
+}
 }

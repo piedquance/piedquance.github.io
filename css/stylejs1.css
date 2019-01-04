@@ -111,7 +111,7 @@ progress::-moz-progress-bar {
   max-width:165px;
   width:50%;
   padding:0.4em 0;
-  background-color: #000;
+  background-color: #0000;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size:2em;
@@ -120,7 +120,7 @@ progress::-moz-progress-bar {
 .colorPicker {
   font-size:16px;
   background-color: #000a;
-  width:9em;
+ width:11em;
   margin-left:165px;
   display:none;
   color:#fff;
@@ -132,7 +132,7 @@ progress::-moz-progress-bar {
 .colorLabels {
   width:100%;
   display:inline-block;
-  padding:1em;
+  padding: 1em 0 1em 1em;
 }
 .colorChoices {
 display:none;
@@ -144,7 +144,7 @@ display:none;
   padding: 1em 2em;
   text-align: justify;
 }
-#a1, #a2, #a3, #a4, #a5, #a6 {
+.linkAs {
   text-decoration: none;
   color: #fff;
 }
@@ -326,11 +326,9 @@ hr {
 body::-webkit-scrollbar {
     width: 1em;
 }
-
 body::-webkit-scrollbar-track {
     background-color: #000;
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
 }
