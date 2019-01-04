@@ -110,10 +110,10 @@ function startup() {
     document.querySelector(col[x].label).style.color = col[x].base;
   col[x].color = document.querySelector(col[x].input);
   col[x].color.addEventListener("change", function(event) {
-  document.querySelectorAll(col[x].ele).forEach(function(p) {
+  document.querySelectorAll(col[x].ele).forEach(function(thing) {
     if(col[x].backrnd) {
-      p.style.backgroundColor = event.target.value;
-    } else p.style.color = event.target.value;
+      thing.style.backgroundColor = event.target.value;
+    } else thing.style.color = event.target.value;
   });
   document.querySelector(col[x].label).style.color = event.target.value;
 });
