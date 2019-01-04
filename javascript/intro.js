@@ -51,16 +51,28 @@ try {
   }} catch(TypeError) {}
 });
 //sticky navigation for mobile
-var menu = document.getElementById("menu");
-var sticks = menu.offsetTop;
+var menu1 = document.getElementById("menu");
+var menu2 = document.getElementById("color");
+var sticks = menu1.offsetTop;
 function sticky() {
-  if (window.pageYOffset >= sticks) {
-    menu.classList.add("stick");
-  } else {
-    menu.classList.remove("stick");
+  if (window.pageYOffset >= 73) {
+     menu1.classList.add("stick");
+     if(window.innerWidth < 599) {
+       menu2.style.marginTop = 0;
+     }
+  }
+ else {
+    menu1.classList.remove("stick");
+     if(window.innerWidth < 599) {
+       menu2.style.marginTop = "69" - window.pageYOffset + "px";
+     }
+  }
+  if(window.innerWidth > 599) {
+  menu2.style.marginTop = 0;
   }
 }
 document.addEventListener("scroll", sticky);
+setInterval(sticky, 10);
 //javascript DOM example
 let egg = document.getElementById("eggs");
 eggs.onclick = function() {
@@ -85,3 +97,27 @@ eggs.style.color = "#ff00ff";
     code.close();
   };
 })();
+//color picker code
+var colorWell;
+var defaultColor = "#000000";
+document.getElementById("textl").style.color = defaultColor;
+window.addEventListener("load", startup, false);
+function startup() {
+  colorWell = document.querySelector("#text");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+function updateFirst(event) {
+  var p = document.querySelector("p");
+  if (p) {
+    p.style.color = defaultColor;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("p").forEach(function(p) {
+    p.style.color = event.target.value;
+  });
+  document.getElementById("textl").style.color = event.target.value;
+}

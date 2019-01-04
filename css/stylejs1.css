@@ -40,7 +40,7 @@ progress::-moz-progress-bar {
   height: 100%;
   overflow: auto;
   position: fixed;
-  top: 0.2em;
+  top: 4px;
   background-color: #000;
   color: #fff;
   font-size: 1.5em;
@@ -98,6 +98,44 @@ progress::-moz-progress-bar {
 }
 .mobile-menu:hover .menu-butt {
   background-color: #000d;
+}
+.color {
+  position:fixed;
+  top:4px;
+  width:50%;
+  max-width:300px;
+  margin-top:0;
+}
+.colorButton{
+  display: block;
+  max-width:165px;
+  width:50%;
+  padding:0.4em 0;
+  background-color: #000;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size:2em;
+  color:#fff;
+}
+.colorPicker {
+  font-size:16px;
+  background-color: #000a;
+  width:9em;
+  margin-left:165px;
+  display:none;
+  color:#fff;
+  font-family: "Inconsolata", monospace;
+}
+.color:hover .colorPicker {
+  display:block;
+}
+.colorLabels {
+  width:60px;
+  display:inline-block;
+  padding:1em;
+}
+.colorChoices {
+display:none;
 }
 .text {
   font-size: 16px;
@@ -226,6 +264,12 @@ p {
 hr {
   margin-right: 10%;
 }
+}
+@media screen and (max-width:740px){
+.colorPicker {
+  margin-top:1.9em;
+}
+}
 @media screen and (max-width:599px) {
   header {
     text-align: center;
@@ -235,7 +279,6 @@ hr {
 .text {
     margin: 0;
     padding:1em 2em;
-
 }
 p {
     padding-right:0;
@@ -245,6 +288,11 @@ hr {
 }
 .nav {display:none;}
 .mobile-menu {display:block;}
+.color {
+  margin-top:69px;
+  width:25%}
+.colorButton {width:100%}
+.colorPicker {margin-left:0;}
 }
 #fade {
   margin: 0;
