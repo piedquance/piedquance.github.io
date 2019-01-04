@@ -19,19 +19,16 @@ window.addEventListener('scroll', function() {
   document.getElementById("bar").max = max;
   document.getElementById("bar").value = value;
 });
-//all headers and sidenav links into 2 arrays
-let p = [document.getElementById("p1"), document.getElementById("p2"),
-document.getElementById("p3"),
-document.getElementById("p4"),
-document.getElementById("p5"),
-document.getElementById("p6"),
-document.getElementById("p7")];
-let a = [document.getElementById("a1"),
-document.getElementById("a2"),
-document.getElementById("a3"),
-document.getElementById("a4"),
-document.getElementById("a5"),
-document.getElementById("a6")];
+//all headers and sidenav links pushed into 2 arrays
+let p = [], a = [];
+let xD;
+for(let x = 1; x <= 7; x++) {
+  xD = "p" + x;
+  p.push(document.getElementById(xD));
+  xD = "a" + x;
+  a.push(document.getElementById(xD));
+}
+a.pop();
 //function that colors grey passed links
 function asdf(x) {
   if (window.pageYOffset > p[x+1].getBoundingClientRect().top + window.scrollY - 200) {  return a[x].style.color = "#aaa"
