@@ -130,7 +130,7 @@ progress::-moz-progress-bar {
   display:block;
 }
 .colorLabels {
-  width:60px;
+  width:100%;
   display:inline-block;
   padding:1em;
 }
@@ -292,7 +292,7 @@ hr {
   margin-top:69px;
   width:25%}
 .colorButton {width:100%}
-.colorPicker {margin-left:0;}
+.colorPicker {margin-left:0; margin-top:0;}
 }
 #fade {
   margin: 0;

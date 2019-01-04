@@ -98,16 +98,16 @@ eggs.style.color = "#ff00ff";
   };
 })();
 //color picker code
-var colorWell;
+var text;
 var defaultColor = "#000000";
 document.getElementById("textl").style.color = defaultColor;
-window.addEventListener("load", startup, false);
+window.addEventListener("load", startup);
 function startup() {
-  colorWell = document.querySelector("#text");
-  colorWell.value = defaultColor;
-  colorWell.addEventListener("input", updateFirst, false);
-  colorWell.addEventListener("change", updateAll, false);
-  colorWell.select();
+  text = document.querySelector("#text");
+  text.value = defaultColor;
+  text.addEventListener("input", updateFirst);
+  text.addEventListener("change", updateAll);
+  text.select();
 }
 function updateFirst(event) {
   var p = document.querySelector("p");
