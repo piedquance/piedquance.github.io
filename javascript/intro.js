@@ -131,3 +131,7 @@ function startup() {
     });
   }
 }
+document.querySelector("#Default").addEventListener("click", function() {
+  localStorage.clear();
+  window.location.reload();
+});
