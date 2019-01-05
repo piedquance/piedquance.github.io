@@ -98,11 +98,11 @@ eggs.style.color = "#ff00ff";
 //color picker code
 
 let col = [
-{label:'#textl', input:'#text', ele:'p, li', base:localStorage.getItem("0"), backrnd:false},
-{label:'#stl', input:'#st', ele:'h2', base:localStorage.getItem("1"), backrnd:false},
-{label:'#tl', input:'#t', ele:'header', base:localStorage.getItem("2"), backrnd:false},
+{label:'#textl', input:'#text', ele:'p, li', backrnd:false},
+{label:'#stl', input:'#st', ele:'h2', backrnd:false},
+{label:'#tl', input:'#t', ele:'header', backrnd:false},
 {label:'#cl', input:'#c', ele:'.nav, header', base:localStorage.getItem("3"), backrnd:true},
-{label:'#Cl', input:'#C', ele:'body', base:localStorage.getItem("4"), backrnd:true}
+{label:'#Cl', input:'#C', ele:'body', backrnd:true}
 ];
 for(let x = 0; x<col.length;x++) {
 if(!localStorage.getItem[""+x]) {
@@ -121,7 +121,8 @@ function allElementsColor(y, x) {
 window.addEventListener("load", startup);
 function startup() {
   for(let x = 0; x<col.length;x++) {
-    document.querySelector(col[x].label).style.color = col[x].base;
+    document.querySelector(col[x].label).style.color =
+    localStorage.getItem(""+x)
     allElementsColor(col[x].base, x)
   col[x].color = document.querySelector(col[x].input);
   col[x].color.addEventListener("change", function(event) {
@@ -132,6 +133,9 @@ function startup() {
   }
 }
 document.querySelector("#Default").addEventListener("click", function() {
-  localStorage.clear();
+  let arg = ["#000000", "#3ff936", "#ffffff", "#000000", "#ffffff"]
+  for(let x = 0; x>arg.length;x++) {
+    localStorage.setItem(""+x, arg[x]);
+  }
   window.location.reload();
 });
