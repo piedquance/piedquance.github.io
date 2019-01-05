@@ -137,6 +137,22 @@ progress::-moz-progress-bar {
 .colorChoices {
 display:none;
 }
+#Cl {
+    padding-bottom: 2em;
+}
+#Default {
+    padding-top: 2em;
+}
+#sizeLabel {
+    padding-left: 1em;
+}
+#size {
+    width: 5em;
+    margin-left: 1em;
+    display: inline;
+    font-family: Inconsolata, monospace;
+    font-size: 15px;
+}
 #Default {
   color:#fff;
   text-decoration:none;

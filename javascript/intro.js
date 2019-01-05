@@ -117,6 +117,11 @@ function allElementsColor(y, x) {
     } else thing.style.color = y;
   });
 }
+setInterval(function() {
+    document.querySelectorAll("p").forEach(function(x) {
+      x.style.fontSize = document.querySelector("#size").value;
+    });
+},100);
 
 window.addEventListener("load", startup);
 function startup() {
