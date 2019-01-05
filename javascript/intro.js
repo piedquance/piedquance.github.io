@@ -101,15 +101,15 @@ let col = [
 {label:'#textl', input:'#text', ele:'p, li', backrnd:false},
 {label:'#stl', input:'#st', ele:'h2', backrnd:false},
 {label:'#tl', input:'#t', ele:'header', backrnd:false},
-{label:'#cl', input:'#c', ele:'.nav, header', base:localStorage.getItem("3"), backrnd:true},
+{label:'#cl', input:'#c', ele:'.nav, header', backrnd:true},
 {label:'#Cl', input:'#C', ele:'body', backrnd:true}
 ];
 for(let x = 0; x<col.length;x++) {
-if(!localStorage.getItem[""+x]) {
-  localStorage.setItem(""+x, document.querySelector(col[x].input).value)
-} else {}
+if(!!localStorage[""+x]) {
+} else {
+  localStorage.setItem(""+x, document.querySelector(col[x].input).value);
 }
-
+}
 function allElementsColor(y, x) {
   document.querySelectorAll(col[x].ele).forEach(function(thing) {
     if(col[x].backrnd) {
@@ -122,8 +122,8 @@ window.addEventListener("load", startup);
 function startup() {
   for(let x = 0; x<col.length;x++) {
     document.querySelector(col[x].label).style.color =
-    localStorage.getItem(""+x)
-    allElementsColor(col[x].base, x)
+    localStorage.getItem(""+x);
+    allElementsColor(localStorage.getItem(""+x), x);
   col[x].color = document.querySelector(col[x].input);
   col[x].color.addEventListener("change", function(event) {
   allElementsColor(event.target.value, x);
@@ -133,9 +133,6 @@ function startup() {
   }
 }
 document.querySelector("#Default").addEventListener("click", function() {
-  let arg = ["#000000", "#3ff936", "#ffffff", "#000000", "#ffffff"]
-  for(let x = 0; x>arg.length;x++) {
-    localStorage.setItem(""+x, arg[x]);
-  }
+  localStorage.clear();
   window.location.reload();
 });
