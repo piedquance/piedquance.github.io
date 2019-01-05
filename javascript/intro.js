@@ -118,8 +118,10 @@ function allElementsColor(y, x) {
   });
 }
 setInterval(function() {
-    document.querySelectorAll("p").forEach(function(x) {
-      x.style.fontSize = document.querySelector("#size").value;
+    document.querySelectorAll("p, li, .sites").forEach(function(x) {
+      x.style.fontSize = document.querySelector("#size").value + "px";
+    })
+    document.querySelectorAll("h2, header").forEach(function(x) { x.style.fontSize = 10+ +document.querySelector("#size").value+"px";
     });
 },100);
 
