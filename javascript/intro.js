@@ -82,19 +82,25 @@ eggs.style.color = "#ff00ff";
 } else alert("Vous n'avez pas entré une couleur valide.");
 };
 //code for Défis
+let code = document.getElementById("code").contentWindow.document;
 (function () {
   let button = document.getElementById("codeInput");
   let js = document.getElementById("js");
-  var code = document.getElementById("code").contentWindow.document;
   button.onclick = function() {
     code.open();
     code.writeln(
-"<p id=\"p\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><script>" +
+"<p id=\"patate\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><script>" +
         js.value +
         "</script>");
     code.close();
   };
 })();
+window.onload = () => {
+  code.open();
+  code.writeln(
+"<p id=\"patate\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><script></script>");
+  code.close();
+}
 //color picker code
 
 let col = [
