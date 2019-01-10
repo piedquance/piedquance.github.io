@@ -361,4 +361,5 @@ body::-webkit-scrollbar-thumb {
 }
 #west {
   text-align: center;
+  padding-bottom: 0.5em;
 }
