@@ -72,7 +72,7 @@
       <br><br>
       Plus précisément HTML et CSS, mais je vais seulement parler d'HTML pour l'instant. HTML (Hypertext Markup Language) est un langage de balises, appelé en anglais un <i>markup language</i>. Les fichiers .html servent à afficher le contenu des pages web. Chaque élément dans un fichier .html suit le format suivant :</p><br>
       <pre><code class="lang-html">&ltbalise attribut="valeur"&gtcontenu&lt/balise&gt</code></pre><br>
-      <p id="banane">Le navigateur web affiche seulement le texte noir sur l'écran, le reste sert à la structure. Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises <code>&ltp&gt</code> et <code>&lt/p&gt</code>, qui veulent dire paragraphe. Il a aussi un attribut  <code>id="banane"</code>, cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments html directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
+      <p id="banane">Le navigateur web affiche seulement le texte noir sur l'écran, le reste sert à la structure. Le texte mauve indique le type d'élément et le texte vert indique un attribut de l'élément, qui comprend une valeur. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises <code>&ltp&gt</code> et <code>&lt/p&gt</code>, qui veulent dire paragraphe. Il a aussi un attribut  <code>id="banane"</code>, cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments HTML directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
       <pre><code class="lang-javascript">document.getElementById("banane").innerHTML = "Vous pouvez changer ce texte si vous voulez."</code></pre><br>
       <p>Si bien écrite, cette commande devrait changer le paragraphe précédent par le texte que vous avez mis entre guillemets. <code>document</code> est le nom donné au fichier .html (En d'autres mots, la page web). <code>getElementById</code> est une fonction qui requiert une valeur afin de donner un résultat. La valeur dans ce cas-là est <code>"banane"</code>, et le résultat de la fonction est l'élément ayant l'identifiant "banane". Finalement, <code>innerHTML</code> permet d'accéder au contenu de l'élément. Si vous entrez la commande sans le signe d'égalité et le texte de droite, la console vous renvoie le contenu de l'élément.
         <button id="butt" onclick=replace(document.getElementById("banane"))>Cliquez içi pour remettre le texte.</button></p>
@@ -83,7 +83,7 @@
       <h2 id="p2">Valeurs et variables</h2>
       <p>Il existe différents types de valeurs dans JavaScript, qui décrivent différents sortes d'information. Pour du texte, on utilise des chaînes de caractères, une série de symboles avec des guillemets au début et à la fin.</p><br>
       <pre><code class="lang-javascript">"Paul mangeait une pomme."</code></pre><br>
-      <p>Ces guillemets peuvent être simples ou doubles, mais doivent être pareilles. La console envoie une erreur s'ils sont différents. Les valeurs numériques sont affichés par des nombres positifs, négatifs ou décimaux.</p><br>
+      <p>Ces guillemets peuvent être simples ou doubles, mais doivent être pareils. La console envoie une erreur s'ils sont différents. Les valeurs numériques sont affichés par des nombres positifs, négatifs ou décimaux.</p><br>
       <pre><code class="lang-javascript">-2.71828182845904523536</code></pre><br>
       <p>JavaScript permet aussi d'afficher des booléens, des valeurs pouvant seulement être vrais ou fausses.</p><br>
       <pre><code class="lang-javascript">true
@@ -93,10 +93,10 @@ false</code></pre><br>
       <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé <code>texte</code> qui a comme valeur <code>"Bla bla bla"</code>. Le symbole <code>=</code> est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console.</p><br>
       <pre><code class="lang-javascript">texte;
 //L'ordinateur envoie "Bla bla bla" comme réponse.</code></pre><br>
-      <p>Après qu'une variable a été créé, elle peut être modifié avec l'opérateur d'assignation. L'identifiant d'une variable ne peut pas commencer par un chiffre ou avoir des espaces. Il existe 3 types de déclarations de variables dans JavaScript : <code>var</code>, <code>let</code> et <code>const</code>. <br><b><code>var</code></b> déclare une variable pouvant être modifié et accessible partout dans le code.<br><b><code>let</code></b> déclare une varable pouvant être modifié, mais dont l'accès est restreint au bloc où elle a été créé. Cela sera expliqué plus amplement plus tard.<br><b><code>const</code></b> déclare une variable non modifiable auquelle l'accès est également restreint au bloc où elle a été créé.</p>
+      <p>Après qu'une variable a été créé, elle peut être modifiée avec l'opérateur d'assignation. L'identifiant d'une variable ne peut pas commencer par un chiffre ou avoir des espaces. Il existe 3 types de déclarations de variables dans JavaScript : <code>var</code>, <code>let</code> et <code>const</code>. <br><b><code>var</code></b> déclare une variable pouvant être modifiée et accessible partout dans le code.<br><b><code>let</code></b> déclare une varable pouvant être modifiée, mais dont l'accès est restreint au bloc où elle a été créée. Cela sera expliqué plus amplement plus tard.<br><b><code>const</code></b> déclare une variable non modifiable auquelle l'accès est également restreint au bloc où elle a été créée.</p>
       <p>En guise d'exercice, vous pouvez essayer de créer quelques variables avec la console et d'assigner une variable à une autre.</p>
       <h2 id="p3">Les opérateurs</h2>
-      <p>Javascript est capable de résoudre plusieurs types d'opérations, incluant les opérations d'arithmétie :</p>
+      <p>Javascript est capable de résoudre plusieurs types d'opérations, incluant les opérations d'arithmétique :</p>
       <pre><code class="lang-javascript">var x = 2;
 var y = 3;
 x + x;
@@ -118,9 +118,9 @@ y / x;
 //Opération de décrémentation (soustraction d'une unité), retournant 0 comme réponse
 2 ** 3;
 //Opération exponentielle, retournant 8 comme réponse</code></pre>
-      <p>Il existe un autre opérateur arithmétique dans JavaScript, l'opérateur de reste. Il renvoie le restant d'une division entière entre 2 opérandes (valeurs utilisés dans l'opération).</p>
+      <p>Il existe un autre opérateur arithmétique dans JavaScript, l'opérateur de reste. Il renvoie le restant d'une division entière entre 2 opérandes (valeurs utilisées dans l'opération).</p>
       <pre><code class="lang-javascript">7 % 2;
-//2 est entièrement divisible de 7 3 fois. Il reste une unité à la fin, la console revoie donc 1.
+//2 est entièrement divisible dans 7 3 fois. Il reste une unité à la fin, la console revoie donc 1.
 //Autres exemples :
 14 % 3; //2
 30 % 10; //0
