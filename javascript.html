@@ -158,18 +158,18 @@ renvoie true si l'opérande de gauche est supérieur ou égal à l'opérande de 
 renvoie true si l'opérande de gauche est inférieur ou égal à l'opérande de droit.*/</code></pre>
       <p><code>0</code>, <code>""</code>, <code>NaN</code>, <code>null</code> et <code>undefined</code> sont considérés comme <code>false</code>, si transformés en booléen. L'opérateur ! renvoie le contraire d'une valeur booléenne.</p>
       <h2 id="p4">Objets et fonctions</h2>
-      <p>Un object, c'est comme un dossier sur votre ordinateur contenant plusieurs fichiers, sauf que les fichiers et le dossier sont des variables. Disons qu'il existe un object nommé <code>Arbre</code> qui contient les variables <code>fruit</code>, <code>taille</code> et <code>âge</code>. Voici comment vous pouvez accéder à leurs valeurs:
+      <p>Un objet, c'est comme un dossier sur votre ordinateur contenant plusieurs fichiers, sauf que les fichiers et le dossier sont des variables. Disons qu'il existe un objet nommé <code>Arbre</code> qui contient les variables <code>fruit</code>, <code>taille</code> et <code>âge</code>. Voici comment vous pouvez accéder à leurs valeurs:
       </p>
       <pre><code class="lang-javascript">Arbre.fruit;  //Pomme
 Arbre.tailleEnMètres; //10
 Arbre.âge; //50</code></pre>
-      <p>Un object est un type de valeur, il est donc déclaré de la même façon que le reste. On utilise des <code>{}</code> pour indiquer que c'est un object et pour déclarer ses variables.</p>
-      <pre><code class="lang-javascript">var Object = {
+      <p>Un objet est un type de valeur, il est donc déclaré de la même façon que le reste. On utilise des <code>{}</code> pour indiquer que c'est un objet et pour déclarer ses variables.</p>
+      <pre><code class="lang-javascript">var objet = {
         Propriété1: Valeur1,
         Propriété2: Valeur2,
         Propriété3: Valeur3
         };</code></pre>
-       <p>Il existe d'autres propriétés des objects qui seront expliqués bientôt, mais il faut d'abord faire un détour par les fonctions. En mathématique, une fonction sert à faire des opération précises sur une valeur. C'est la même chose en programmation, mais avec beaucoup plus de possibilités.</p>
+       <p>Il existe d'autres propriétés des objets qui seront expliqués bientôt, mais il faut d'abord faire un détour par les fonctions. En mathématique, une fonction sert à faire des opération précises sur une valeur. C'est la même chose en programmation, mais avec beaucoup plus de possibilités.</p>
        <pre><code class="lang-javascript">alert("Bonjour!"); //Cette fonction fera apparaitre une alerte qui dira Bonjour!
 prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information sur l'usager</code></pre>
       <p>Si vous exécutez ces exemples (ce que je vous conseille de faire), vous verrez que <code>alert()</code> retourne <code>undefined</code> et <code>prompt()</code> retourne la valeur que vous avez entrée. Une fonction peut retourner une valeur, comme le résultat d'une opération, ou juste effectuer une action (ou les deux!). La plupart du temps, elle a besoin d'arguments fournis entre des parenthèses pour faire quelque chose. Voici la syntaxe de déclaration d'une fonction:</p>
@@ -180,7 +180,7 @@ prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information sur l'us
       <p>Cette fonction prends les 2 valeurs fournis entre parenthèses et retourne le résultat de leur addition.</p>
       <pre><code class="lang-javascript">Addition(1, 3); //Retourne 4</code></pre>
       <p>Dans cet exemple, une variable a été créée avec la fonction, et on y a accès partout dans le programme. Si la fonction avait utilisé <code>let</code> comme déclarateur de variable, l'accès à la variable aurait été restreint au bloc de code où elle a été créé, délimité par des accolades. Il est possible de créer des fonctions plus complexes avec des conditionnels et des boucles, qui seront expliqué dans la prochaine section.</p>
-      <p>Un object peut contenir une fonction, de la même façon qu'il peut contenir n'importe quel autre type de valeur, y compris un autre object. La syntaxe de l'objet reste la même.</p>
+      <p>Un objet peut contenir une fonction, de la même façon qu'il peut contenir n'importe quel autre type de valeur, y compris un autre objet. La syntaxe de l'objet reste la même.</p>
       <pre><code class="lang-javascript">let Arbre = {
 fruit: "Pomme",
 tailleEnMètres: 10,
@@ -283,7 +283,7 @@ for(let x = 0 ; x < 10 ; x++) {
               }
 /*Cette règle sera appliquée que lorsque la souris est directement
  au dessus de l'élément avec l'id banane.*/</code></pre>
-      <p>JavaScript comme langage est assez limité, c'est pourquoi il lui faut utiliser le DOM (Document Object Model) pour interagir avec les pages web. Le DOM est un API (Application Programming Interface), une série de fonctions qui permettent à JavaScript d'intéragir avec une page web, en représentant la page web sous forme de l'objet <code>document</code>. Voici quelques fonctions fournis par le DOM: </p>
+      <p>JavaScript comme langage est assez limité, c'est pourquoi il lui faut utiliser le DOM (Document objet Model) pour interagir avec les pages web. Le DOM est un API (Application Programming Interface), une série de fonctions qui permettent à JavaScript d'intéragir avec une page web, en représentant la page web sous forme de l'objet <code>document</code>. Voici quelques fonctions fournis par le DOM: </p>
       <pre><code class="lang-javascript">//fonctions pouvant être mises dans une variable
 document.getElementById("id");
 document.getElementsByClassName("nomDeClass");
