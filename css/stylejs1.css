@@ -276,7 +276,7 @@ header {
   margin-left:5.5em;
   text-align: center;
 }
-span {
+.span {
   padding-left: 1em;
 }
 .text {
@@ -300,7 +300,7 @@ hr {
     margin:auto;
     margin-left: 0;
 }
-span {
+.span {
   padding-left: 0;
 }
 .text {
