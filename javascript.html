@@ -61,7 +61,7 @@
         <input type="color" name="C" value="#ffffff" class="colorChoices" id="C">
         <label for="size" id="sizeLabel">Taille</label>
       <input type="text" name="size" id="size" placeholder="16" value="16">
-        <a href="#" id="Default">Default</a>
+        <a href="#" id="Default">Par défaut</a>
       </div>
     </div>
     <div class="text">
@@ -90,7 +90,7 @@
 false</code></pre><br>
       <p>Si vous écrivez ces valeurs dans la console, elle vous les renvoie, ne sachant pas quoi faire avec. Les valeurs ne sont pas mémorisés par l'ordinateur, il faut pour cela utiliser des variables.</p><br>
       <pre><code class="lang-javascript">var texte = "Bla bla bla";</code></pre><br>
-      <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé <code>texte</code> qui a comme valeur <code>"Bla bla bla"</code>. Le symbole <code>=</code> est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console.</p><br>
+      <p>Dans le cas du haut, l'ordinateur aurait créé avec la déclaration var une variable appelé <code>texte</code> qui a comme valeur <code>"Bla bla bla"</code>. Le symbole <code>=</code> est un opérateur d'assignation, il permet d'assigner une valeur à un variable. Pour accéder à cette valeur, il suffit d'entrer l'identifant de la variable dans la console. Le symbole <code>//</code> est utilisé pour laisser des commentaires qui n'affecteront pas le code. <code>/*</code> et <code>*/</code> sont utilisés pour laisser des commentaires sur plusieurs lignes.</p><br>
       <pre><code class="lang-javascript">texte;
 //L'ordinateur envoie "Bla bla bla" comme réponse.</code></pre><br>
       <p>Après qu'une variable a été créé, elle peut être modifiée avec l'opérateur d'assignation. L'identifiant d'une variable ne peut pas commencer par un chiffre ou avoir des espaces. Il existe 3 types de déclarations de variables dans JavaScript : <code>var</code>, <code>let</code> et <code>const</code>. <br><b><code>var</code></b> déclare une variable pouvant être modifiée et accessible partout dans le code.<br><b><code>let</code></b> déclare une varable pouvant être modifiée, mais dont l'accès est restreint au bloc où elle a été créée. Cela sera expliqué plus amplement plus tard.<br><b><code>const</code></b> déclare une variable non modifiable auquelle l'accès est également restreint au bloc où elle a été créée.</p>
@@ -99,26 +99,25 @@ false</code></pre><br>
       <p>Javascript est capable de résoudre plusieurs types d'opérations, incluant les opérations d'arithmétique :</p>
       <pre><code class="lang-javascript">var x = 2;
 var y = 3;
-x + x;
-//Opération d'addition, retournant 4 comme réponse
+//Opération d'addition
+x + x; //4
 //Il est également possible d'addditionner des chaînes de caractères ensemble
 "Bonjour, " + "individu.";
 //"Bonjour, individu."
-x - x;
-//Opération de soustraction, retournant 0 comme réponse
-x * y;
-//Opération de multiplication, retournant 6 comme réponse
-y / x;
-//Opération de division, retournant 1.5  comme réponse
-0 / 0;
-// Retourne NaN (Not a Number)
-1++;
-//Opération d'incrémentation (ajout d'une unité), retournant 2  comme réponse
-1--;
-//Opération de décrémentation (soustraction d'une unité), retournant 0 comme réponse
-2 ** 3;
-//Opération exponentielle, retournant 8 comme réponse</code></pre>
-      <p>Il existe un autre opérateur arithmétique dans JavaScript, l'opérateur de reste. Il renvoie le restant d'une division entière entre 2 opérandes (valeurs utilisées dans l'opération).</p>
+//Opération de soustraction
+x - x; //0
+//Opération de multiplication
+x * y; //6
+//Opération de division
+y / x; //1.5
+0 / 0;  //NaN (Not a Number)
+//Opération d'incrémentation (ajout d'une unité)
+1++; //2
+//Opération de décrémentation (soustraction d'une unité)
+1--; //0
+//Opération exponentielle
+2 ** 3; //8</code></pre>
+      <p>Il existe un autre opérateur arithmétique dans JavaScript, l'opérateur de reste. Il renvoie le restant d'une division entière entre 2 opérandes (valeurs sur lesquelles l'opération est exécutée).</p>
       <pre><code class="lang-javascript">7 % 2;
 //2 est entièrement divisible dans 7 3 fois. Il reste une unité à la fin, la console revoie donc 1.
 //Autres exemples :
@@ -165,14 +164,18 @@ renvoie true si l'opérande de gauche est inférieur ou égal à l'opérande de 
 Arbre.tailleEnMètres; //10
 Arbre.âge; //50</code></pre>
       <p>Un objet est un type de valeur, il est donc déclaré de la même façon que le reste. On utilise des <code>{}</code> pour indiquer que c'est un objet et pour déclarer ses variables.</p>
+<<<<<<< HEAD
       <pre><code class="lang-javascript">var Objet = {
+=======
+      <pre><code class="lang-javascript">var objet = {
+>>>>>>> c518fe489ebea2f72a03b10b91f5175e2dedc49c
         Propriété1: Valeur1,
         Propriété2: Valeur2,
         Propriété3: Valeur3
         };</code></pre>
        <p>Il existe d'autres propriétés des objets qui seront expliqués bientôt, mais il faut d'abord faire un détour par les fonctions. En mathématique, une fonction sert à faire des opération précises sur une valeur. C'est la même chose en programmation, mais avec beaucoup plus de possibilités.</p>
        <pre><code class="lang-javascript">alert("Bonjour!"); //Cette fonction fera apparaitre une alerte qui dira Bonjour!
-prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information.</code></pre>
+prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information sur l'usager</code></pre>
       <p>Si vous exécutez ces exemples (ce que je vous conseille de faire), vous verrez que <code>alert()</code> retourne <code>undefined</code> et <code>prompt()</code> retourne la valeur que vous avez entrée. Une fonction peut retourner une valeur, comme le résultat d'une opération, ou juste effectuer une action (ou les deux!). La plupart du temps, elle a besoin d'arguments fournis entre des parenthèses pour faire quelque chose. Voici la syntaxe de déclaration d'une fonction:</p>
       <pre><code class="lang-javascript">function Addition(Arg1,  Arg2) {
         var Arg3 = Arg1 + Arg2; //Déclare une variable
@@ -180,8 +183,13 @@ prompt("Quel est votre nom?"); //Celle-ci peut prendre de l'information.</code><
       }</code></pre>
       <p>Cette fonction prends les 2 valeurs fournis entre parenthèses et retourne le résultat de leur addition.</p>
       <pre><code class="lang-javascript">Addition(1, 3); //Retourne 4</code></pre>
+<<<<<<< HEAD
       <p>Dans cet exemple, une variable a été créé avec la fonction, et on y a accès partout dans le programme. Si la fonction avait utilisé <code>let</code> comme déclarateur de variable, l'accès à la variable aurait été restreint au bloc de code où elle a été créé, délimité par des accolades. Il est possible de créer des fonctions plus complexes avec des conditionnels et des boucles, qui seront expliqués dans la prochaines section.</p>
       <p>Un objet peut contenir une fonction, de la même façon qu'il peut contenir n'importe quel autre type de valeur, y compris un autre objet. La syntaxe reste la même.</p>
+=======
+      <p>Dans cet exemple, une variable a été créée avec la fonction, et on y a accès partout dans le programme. Si la fonction avait utilisé <code>let</code> comme déclarateur de variable, l'accès à la variable aurait été restreint au bloc de code où elle a été créé, délimité par des accolades. Il est possible de créer des fonctions plus complexes avec des conditionnels et des boucles, qui seront expliqué dans la prochaine section.</p>
+      <p>Un objet peut contenir une fonction, de la même façon qu'il peut contenir n'importe quel autre type de valeur, y compris un autre objet. La syntaxe de l'objet reste la même.</p>
+>>>>>>> c518fe489ebea2f72a03b10b91f5175e2dedc49c
       <pre><code class="lang-javascript">let Arbre = {
 fruit: "Pomme",
 tailleEnMètres: 10,
@@ -220,7 +228,7 @@ Fonction("Exemple");  //"Exemple!!!"
       #  -Sinon, si vous êtes gaucher, faites un pas vers la gauche.<br>
       #  -Dans tous les autres cas, faites un pas vers l'arrière.<br></p>
       <hr>
-      <p>Dans chacune des étapes, une condition doit être vrai pour permettre l'exécution d'une action. En programmation, il existe des conditionnels qui exécutent ou non des actions si quelque chose est vrai ou faux.</p>
+      <p>Dans chacune des étapes, une condition doit être vraie pour permettre l'exécution d'une action. En programmation, il existe des conditionnels qui exécutent ou non des actions si quelque chose est vrai ou faux.</p>
       <pre><code class="lang-javascript">if(Écriture == "d") {
       console.log("Faites un pas vers la droite.");
       } else if(Écriture == "g") {
@@ -237,7 +245,7 @@ console.log(fooo);
 </code></pre>
       <p>Analysons cet exemple afin de mieux comprendre les conditionnels...</p>
       <p><b>*</b> Une variable globale <code>foo</code> est déclarée, ayant comme valeur <code>4</code>.<br>
-        <b>*</b> Une déclaration if va exécuter son code seulement si <code>foo</code> est égale à <code>4</code> ET <code>true</code> est égale à <code>true</code>. Ces 2 conditions sont vrai, donc le code est exécuté et une nouvelle variable est déclaré, ayant une valeur de <code>2</code>.<br>
+        <b>*</b> Une déclaration if va exécuter son code seulement si <code>foo</code> est égale à <code>4</code> ET <code>true</code> est égale à <code>true</code>. Ces 2 conditions sont vraies, donc le code est exécuté et la nouvelle variable fooo est déclarée, ayant une valeur de <code>2</code>.<br>
         <b>*</b> <code>console.log()</code> essaye d'imprimer la valeur de <code>fooo</code> dans la console.<br>
         <b>*</b> Aha! <code>console.log()</code> n'a pas accès à <code>fooo</code>, parce que <code>fooo</code> est une variable locale, auquelle l'accès est restreint au bloc de code où elle a été créé (à cause de la déclaration <code>let</code>).<br>
         <b>*</b> <code>Uncaught ReferenceError: fooo is not defined</code>, fin du programme.<br>
@@ -276,13 +284,18 @@ for(let x = 0 ; x < 10 ; x++) {
       <pre><code class="lang-css">p {
   color:#00ff00;
   }</code></pre>
-      <p>Cette règle est composée d'un sélecteur et d'une déclaration. Le sélecteur spécifie l'élément(s) sur lequel(lesquels) le style sera appliqué (dans ce cas, tous les éléments <code>p</code>). La déclaration est composée d'une propriété et d'une valeur. Chaque élément HTML a des propriétés qui régissent son apparence. En changeant la valeur de certaines propriétés, on change l'apparence et le comportement des éléments associés.</p>
-      <p>CSS utilise la notation hexadécimal pour identifier les couleurs. Chaque couleur a une valeur, représenté par une série de 6 chiffres et lettres allant de a à f. Ces unités sont séparés en trois paires de 2 unités, représentant les teints rouge, verts et bleus de la couleur. <code>#000000</code> est la couleur noire et <code>#ffffff</code> est la couleur blanche. <code id="r">#ff0000</code>, <code id="g">#00ff00</code> et <code id="b">#0000ff</code> sont rouge, vert et bleu respectivement.</p>
+      <p>Cette règle est composée d'un sélecteur et d'une déclaration. Le sélecteur spécifie l'élément(s) sur lequel (lesquels) le style sera appliqué (dans ce cas, tous les éléments <code>p</code>). La déclaration est composée d'une propriété et d'une valeur. Chaque élément HTML a des propriétés qui régissent son apparence. En changeant la valeur de certaines propriétés, on change non seulement l'apparence, mais aussi le comportement des éléments associés.</p>
+      <p>CSS utilise la notation hexadécimal pour identifier les couleurs. Chaque couleur a une valeur, représentée par une série de 6 chiffres et lettres allant de a à f. Ces unités sont séparés en trois paires de 2 unités, représentant les teints rouge, verts et bleus de la couleur. <code>#000000</code> est la couleur noire et <code>#ffffff</code> est la couleur blanche. <code id="r">#ff0000</code>, <code id="g">#00ff00</code> et <code id="b">#0000ff</code> sont rouge, vert et bleu respectivement.</p>
       <p>Il existe des sélécteurs plus précis pour les éléments HTML ayant un identifiant et/ou une classe (une classe est définie par l'attibut <code>class = "valeur"</code>, et peut être partagée par plusieurs éléments). Le sélecteur d'une classe <code>texte</code> est <code>.texte {}</code> et le sélecteur d'un identifiant <code>titre</code> est <code>#titre {}</code>. Il y a beaucoup d'autres types de déclarations CSS, comme <code>size = 16px;</code> (grandeur du texte), <code>background-color = #00f;</code> (couleur de l'arrière-plan) ou <code>font-family = monospace</code> (police de caractères). Une règle CSS peut être écrite de telle sorte qu'elle ne soit appliquée que lorsque l'élément associé est dans un état spécifique.</p>
       <pre><code class="lang-css">#banane:hover {
         color : red;
               }
+<<<<<<< HEAD
 /*Cette règle sera appliquée que lorsque la souris sera sur l'élément avec l'id banane.*/</code></pre>
+=======
+/*Cette règle sera appliquée que lorsque la souris est directement
+ au dessus de l'élément avec l'id banane.*/</code></pre>
+>>>>>>> c518fe489ebea2f72a03b10b91f5175e2dedc49c
       <p>JavaScript comme langage est assez limité, c'est pourquoi il lui faut utiliser le DOM (Document objet Model) pour interagir avec les pages web. Le DOM est un API (Application Programming Interface), une série de fonctions qui permettent à JavaScript d'intéragir avec une page web, en représentant la page web sous forme de l'objet <code>document</code>. Voici quelques fonctions fournis par le DOM: </p>
       <pre><code class="lang-javascript">//fonctions pouvant être mises dans une variable
 document.getElementById("id");
@@ -297,13 +310,13 @@ Liste d'actions courantes:
 "click" : Activée lorsque l'élément est cliqué.
 "scroll" : Activée lorsque la page défile.
 */</code></pre>
-      <p>Pour finir, je vais vous présenter un programme JavaScript qui utilise le DOM.</p>
+      <p>Pour finir, je vais vous présenter un programme JavaScript qui utilise le DOM pour changer la couleur d'un paragraphe.</p>
       <pre><code class="lang-javascript">let egg = document.getElementById("eggs");
-//L'élément eggs (le paragraphe en dessous)est mis dans la variable eggs.
+//L'élément eggs (le paragraphe en dessous) est mis dans la variable eggs.
 eggs.addEventListener("click", function() {
 //Une fonction est activé lorsque eggs est cliqué.
   let réponse = prompt("Entrez une couleur parmi les suivantes : cyan ou violet");
-//Une fenête pop-up vous demande une couleur, le choix est mis dans réponse.
+//Une fenête pop-up vous demande une couleur, le choix est mis dans la variable réponse.
   if(réponse === "cyan") {
     eggs.style.color = "#00ffff";
 //La couleur du texte sera cyan si réponse est égal à "cyan".
@@ -313,7 +326,7 @@ eggs.addEventListener("click", function() {
       } else alert("Vous n'avez pas entré une couleur valide.");
 //Pour toute les autres valeurs de réponse, donner une alerte.
 });</code> </pre>
-      <p id="eggs">Cliquez sur ce paragraphe pour en changer la couleur!</p>
+      <p id="eggs">Cliquez sur ce paragraphe pour en changer la couleur!</p><br>
       <p>Bravo! Vous avez désormais fini de lire toutes les sections! Ci-dessous sont des sites qui permettront d'approfondir vos connaissances, ainsi qu'une série de défis qui peuvent les tester.</p>
       <br>
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="sites">La documentation officielle de JavaScript, par Mozilla (en anglais)</a>
@@ -322,7 +335,7 @@ eggs.addEventListener("click", function() {
       <br>
       <a href="https://p5js.org/" target="_blank" class="sites">Une bibliothèque JavaScript pour coder des graphiques 2D et 3D (en anglais)</a>
       <h2 id="p7">Défis</h2>
-      <p>En dessous de l'éditeur est un paragraphe avec l'identifiant <code>p</code>. Ce paragraphe contient du texte de remplissage qui ne veut rien dire. Vous devez accomplir les défis suivants avec JavaScript :</p>
+      <p>En dessous de l'éditeur est un paragraphe avec l'identifiant <code>patate</code>. Ce paragraphe contient du texte de remplissage qui ne veut rien dire. Vous devez accomplir les défis suivants avec JavaScript :</p>
       <ul>
         <li>Aggrandir le texte à 24 pixels et changer le fontFamily à arial</li>
         <li>À chaque 2 clics, la couleur du texte change selon une couleur entrée par l'utilisateur</li>
@@ -334,7 +347,9 @@ eggs.addEventListener("click", function() {
      <input type="button" name="" value="Lancer le programme" id="codeInput">
      <iframe id="code"></iframe>
       </div>
+          <div id="virginia"><a class="sites" id="west" href="index">Country roads, take me home</a> </div>
     </div>
+
   <script type="text/javascript" src="javascript/cube.js">
   </script>
   <script src="javascript/prism.js"></script>

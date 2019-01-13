@@ -359,3 +359,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
 }
+#west {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
