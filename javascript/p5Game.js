@@ -12,8 +12,9 @@ var myCanvas = createCanvas(sketchS, sketchS);
 }
 function draw() {
  rectS = sketchS/20;
- background(170)
- fill(0);
+ background(200, 30);
+ noStroke();
+ fill(0, 100);
  rect(x, y, rectS, rectS);
 if (y < 0) {
     speedy = random(1, 1.5);
