@@ -1,20 +1,19 @@
 body {
   font-size: 10px;
   margin: 0;
+  background: url(https://get.pxhere.com/photo/landscape-nature-grass-mountain-meadow-hill-valley-mountain-range-photo-summer-green-journey-pasture-blue-climbing-highland-ridge-blue-sky-height-rocks-outdoors-mountains-alps-grassland-plateau-switzerland-fell-slopes-ecosystem-landform-lone-peak-mountain-pass-geographical-feature-mountainous-landforms-646014.jpg) no-repeat;
+  background-size: 100%;
 }
 #title {
   letter-spacing: 2px;
-  color: #fff;
-  background-color: #000;
+  color: #fffc;
+  background-color: #000a;
   font-family: Consolas;
   font-size: 3em;
   padding: 0.2em 0em;
   text-align: center;
   width: 100%;
   margin: auto;
-}
-#title:hover {
-  color: #aaa;
 }
 canvas {
   display: block;
@@ -33,9 +32,6 @@ canvas {
   padding:0.5em 0;
   border:1em;
   background-color: #000;
-}
-#timeContainer:hover {
-    color: #aaa;
 }
 .timeteam {
   display:inline;
@@ -62,7 +58,7 @@ canvas {
       text-align: center;
 }
 nav {
-  background-color: #fff;
+  background-color: #fff0;
   margin: auto;
   text-align: center;
   width: auto;
