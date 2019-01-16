@@ -29,12 +29,6 @@ if (y < 0) {
   } else if (x > (sketchS - rectS)) {
     speedx = random(-1.5, -1);
 }
-/*if ((x == 0 && y == 0) ||
-    (x == 0 && y == sketchS- rectS) ||
-    (x == sketchS- rectS && y == 0) ||
-    (x == sketchS- rectS && y == sketchS- rectS)) {
-  edgeCount += 1;}
-  edges.innerHTML = "The square has touched the corner "+edgeCount+" times.";*/
   x = round((x + speedx) *z) /z;
   y = round((y + speedy)*z) /z;
 }
