@@ -74,7 +74,7 @@ ul {
   background: #fff2;
 }
 .links:hover {
-  background: #555;
+  background: #fff2;
   -webkit-animation: color 0.5s;
      -moz-animation: color 0.5s;
       -ms-animation: color 0.5s;
@@ -83,23 +83,23 @@ ul {
 }
 @keyframes color {
       from { background: #fff5; }
-    to   { background: #555; }
+    to   { background: #fff2; }
 }
 @-moz-keyframes color {
     from { background: #fff5; }
-    to   { background: #555; }
+    to   { background: #fff2; }
 }
 @-webkit-keyframes color {
     from { background: #fff5; }
-  to   { background: #555; }
+  to   { background: #fff2; }
 }
 @-ms-keyframes color {
     from { background: #fff5; }
-    to   { background: #555; }
+    to   { background: #fff2; }
 }
 @-o-keyframes color {
     from { background: #fff5; }
-  to   { background: #555; }
+  to   { background: #fff2; }
 }
 /*fade effect*/
 .fade {
