@@ -7,7 +7,7 @@ var edgeCount = 0;
 var edges = document.getElementById("cornerTouch");
 function setup() {
 if(windowWidth < 450) { sketchS = windowWidth/1.5;
-} else { sketchS = windowWidth/4;}
+} else { sketchS = windowWidth/4.2;}
 var myCanvas = createCanvas(sketchS, sketchS);
  myCanvas.parent('game');
  rectS = sketchS/20;

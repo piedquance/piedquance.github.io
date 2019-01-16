@@ -1,13 +1,12 @@
 body {
   font-size: 10px;
   margin: 0;
-  background: url(https://get.pxhere.com/photo/landscape-nature-grass-mountain-meadow-hill-valley-mountain-range-photo-summer-green-journey-pasture-blue-climbing-highland-ridge-blue-sky-height-rocks-outdoors-mountains-alps-grassland-plateau-switzerland-fell-slopes-ecosystem-landform-lone-peak-mountain-pass-geographical-feature-mountainous-landforms-646014.jpg) no-repeat;
+  background: url(images/paysage1.jpg) no-repeat;
   background-size: 100%;
 }
 #title {
   letter-spacing: 2px;
   color: #fffc;
-  background-color: #000a;
   font-family: Consolas;
   font-size: 3em;
   padding: 0.2em 0em;
@@ -56,9 +55,10 @@ canvas {
       font-family: Consolas, monospace;
       font-size: 1.5em;
       text-align: center;
+      color:#cccd;
 }
 nav {
-  background-color: #fff0;
+  background-color: #000a;
   margin: auto;
   text-align: center;
   width: auto;
@@ -66,7 +66,7 @@ nav {
 .menu {
     text-decoration: none;
     font-family: Consolas, monospace;
-    color: #000;
+    color: #fffc;
     letter-spacing: 2px;
     margin: 0 5%;
     font-size: 2em;
@@ -75,7 +75,7 @@ nav {
   color: #aaa;
 }
 #current {
-  color: #aaa;
+  color: #666;
 }
 .info {
   margin:auto;
@@ -84,7 +84,8 @@ nav {
   text-align: center;
   font-family: Consolas, monospace;
   font-size: 1.5em;
-  background-color: #ddd;
+  background-color: #0004;
+  color:#fff;
   width:70%;
   padding: 0.1em 0.5em;
 }
@@ -96,7 +97,7 @@ nav {
     width: 70%;
     max-width: 45em;
     padding: 2em 1em;
-    background-color: #ddd;
+    background-color: #0004;
 }
 .info2link {
   font-family: Consolas, monospace;
@@ -104,15 +105,15 @@ nav {
 }
 .info2link:link {
   text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 .info2link:visited {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .info2link:hover {
     text-decoration: underline;
-  color: #000;
+  color: #ddd;
 }
 .info2link:active {
   text-decoration: underline;
@@ -156,4 +157,10 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
+}
+@media screen and (max-width:1100px){
+body {
+  background: url(images/paysage1.jpg) no-repeat;
+  background-size: none;
+}
 }
