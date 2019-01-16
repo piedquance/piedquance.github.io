@@ -7,7 +7,7 @@ var edgeCount = 0;
 var edges = document.getElementById("cornerTouch");
 function setup() {
 if(windowWidth < 450) { sketchS = windowWidth/1.5;
-} else { sketchS = windowWidth/4.2;}
+} else { sketchS = 300;}
 var myCanvas = createCanvas(sketchS, sketchS);
  myCanvas.parent('game');
  rectS = sketchS/20;
@@ -29,12 +29,12 @@ if (y < 0) {
   } else if (x > (sketchS - rectS)) {
     speedx = random(-1.5, -1);
 }
-if ((x == 0 && y == 0) ||
+/*if ((x == 0 && y == 0) ||
     (x == 0 && y == sketchS- rectS) ||
     (x == sketchS- rectS && y == 0) ||
     (x == sketchS- rectS && y == sketchS- rectS)) {
   edgeCount += 1;}
-  edges.innerHTML = "The square has touched the corner "+edgeCount+" times.";
+  edges.innerHTML = "The square has touched the corner "+edgeCount+" times.";*/
   x = round((x + speedx) *z) /z;
   y = round((y + speedy)*z) /z;
 }
