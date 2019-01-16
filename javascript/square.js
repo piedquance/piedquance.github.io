@@ -15,7 +15,7 @@ var myCanvas = createCanvas(sketchS, sketchS);
 function draw() {
 clear();
 noStroke();
-fill(0, 160);
+fill(255, 70);
 rect(0, 0, sketchS, y);
 rect(0, y, x, rectS);
 rect(x + rectS, y, sketchS, rectS);
