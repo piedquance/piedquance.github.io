@@ -1,8 +1,7 @@
 body {
   font-size: 10px;
   margin: 0;
-  background: url(images/paysage1.jpg) no-repeat;
-  background-size: 100%;
+  background: url(images/pays4.jpg) no-repeat;
     font-family: Consolas, monospace;
 }
 header {
@@ -29,17 +28,20 @@ nav {
   width: auto;
   height:23px;
 }
-#menu {
+#stuff, #info {
     text-decoration: none;
     color: #fffc;
+    background-color: #0000;
     letter-spacing: 2px;
     margin: 0 5%;
+    padding:0 1em;
     font-size: 2em;
+    border: 0;
 }
 p {
   margin:0;
 }
-.stuff {
+.stuff, .info {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -51,10 +53,6 @@ p {
   height:0;
   transition: .5s ease;
 }
-nav:hover .stuff {
-  bottom: 0;
-  height:20%;
-}
 ul {
   padding: 0;
   width: 100%;
@@ -64,7 +62,7 @@ ul {
   text-decoration: none;
   display:block;
   width: 80%;
-  margin: 1em auto;
+  margin: 3em auto;
   text-align: center;
   padding:0.5em 0;
   font-size: 16px;
@@ -75,31 +73,11 @@ ul {
 }
 .links:hover {
   background: #fff2;
-  -webkit-animation: color 0.5s;
-     -moz-animation: color 0.5s;
-      -ms-animation: color 0.5s;
-       -o-animation: color 0.5s;
           animation: color 0.5s;
 }
 @keyframes color {
       from { background: #fff5; }
     to   { background: #fff2; }
-}
-@-moz-keyframes color {
-    from { background: #fff5; }
-    to   { background: #fff2; }
-}
-@-webkit-keyframes color {
-    from { background: #fff5; }
-  to   { background: #fff2; }
-}
-@-ms-keyframes color {
-    from { background: #fff5; }
-    to   { background: #fff2; }
-}
-@-o-keyframes color {
-    from { background: #fff5; }
-  to   { background: #fff2; }
 }
 /*fade effect*/
 .fade {
@@ -139,9 +117,4 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
-}
-@media screen and (max-width:1125px){
-body {
-  background: url(images/paysage1.jpg) no-repeat;
-  background-size: none;
 }

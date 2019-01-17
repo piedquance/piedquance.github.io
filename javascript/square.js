@@ -1,3 +1,44 @@
+let stuff = document.querySelector(".stuff");
+let info = document.querySelector(".info");
+let stuffB = document.querySelector("#stuff");
+let infoB =document.querySelector("#info");
+let title = document.querySelector("#title");
+let nav = document.querySelector("nav");
+let onIt = false;
+title.onmouseover = () => {onIt = true;};
+title.onmouseout = () => {onIt = false;};
+function disappear(icon, event) {
+    if(icon.getBoundingClientRect().bottom-50 > event.pageY && icon.getBoundingClientRect().top+1 < event.pageY) {
+      console.log(!onIt);
+      icon.style.bottom = "0";
+      icon.style.height = "20%";
+    } else {
+      icon.style.bottom = "100%";
+      icon.style.height = "0";
+  }
+  console.log("fuck");
+}
+stuffB.onmouseover = () => {
+  stuff.style.bottom = "0";
+  stuff.style.height = "20%";
+  info.style.bottom = "100%";
+  info.style.height = "0";
+  current = true;
+};
+infoB.onmouseover = () => {
+  info.style.bottom = "0";
+  info.style.height = "20%";
+  stuff.style.bottom = "100%";
+  stuff.style.height = "0";
+    current = false;
+};
+nav.onmousemove = () => {
+  disappear(stuff, event);
+};
+nav.onmousemove = () => {
+  disappear(info, event);
+}
+
 var speedx = 1.1;
 var speedy = 1;
 var x = 10;
