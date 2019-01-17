@@ -14,41 +14,35 @@
     <meta name="keywords" content="shutterstacks, shutter, stacks, green">
     <meta name="author" content="Mr.Green">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shutterstacks</title>
+    <title>shutterstacks</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <link href="css/font.css" rel="stylesheet">
     <script src="javascript/p5.min.js"></script>
   </head>
-  <body onload="setInterval(timeHere, 1000);">
-  <header>
-    <div id = "title">
-      <p class="fade">
-        Shutterstacks</p>
-    </div>
-  <nav>
-<a href="#" class="menu" id="current">Home</a> <a href="stuff" class="menu">Stuff</a> <a href="info" class="menu">Info</a>
-</nav>
-  <div id="timeContainer">
-    <div class="timeteam timeLeft">
-      <label for="selectDate">Time</label>
-      <select class="timeteam" id="selectDate">
-        <option value="now" selected>right now</option>
-        <option value="year">until next year</option>
-      </select>
-      <p class="timeteam">==></p>
-    </div>
-    <p class="fade, timeteam" id="time">oof</p>
-  </div>
+  <body>
+    <header>
+      <div id = "title">
+        <p class="fade">shutterstacks</p>
+      </div>
     </header>
+    <nav>
+    <button id="stuff">stuff</button>
+    <button id="info">info</button>
+    <div class="stuff">
+      <ul>
+        <li><a href="javascript" class="links">Une introduction abrégée sur JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="info">
+      <ul>
+        <li><a href="#" class="links">Hey there.</a> </li>
+      </ul>
+    </div>
+    </nav>
 
-  <div id="game">
-    <p id="cornerTouch">The square has touched the corner 0 times.</p>
-    <p id="youHere">You have been here for 0 seconds.</p>
-  </div>
-
-<script type="text/javascript" src="javascript/main.js">
-</script>
-<script type="text/javascript" src="javascript/p5Game.js">
-</script>
+    <div id="game"></div>
+        <p id="time"></p>
+    <script type="text/javascript" src="javascript/square.js">
+    </script>
   </body>
 </html>
