@@ -4,19 +4,14 @@ let stuffB = document.querySelector("#stuff");
 let infoB =document.querySelector("#info");
 let title = document.querySelector("#title");
 let nav = document.querySelector("nav");
-let onIt = false;
-title.onmouseover = () => {onIt = true;};
-title.onmouseout = () => {onIt = false;};
 function disappear(icon, event) {
     if(icon.getBoundingClientRect().bottom-50 > event.pageY && icon.getBoundingClientRect().top+1 < event.pageY) {
-      console.log(!onIt);
       icon.style.bottom = "0";
       icon.style.height = "20%";
     } else {
       icon.style.bottom = "100%";
       icon.style.height = "0";
   }
-  console.log("fuck");
 }
 stuffB.onmouseover = () => {
   stuff.style.bottom = "0";
@@ -32,10 +27,10 @@ infoB.onmouseover = () => {
   stuff.style.height = "0";
     current = false;
 };
-nav.onmousemove = () => {
+stuff.onmousemove = () => {
   disappear(stuff, event);
 };
-nav.onmousemove = () => {
+info.onmousemove = () => {
   disappear(info, event);
 }
 
@@ -56,7 +51,7 @@ var myCanvas = createCanvas(sketchS, sketchS);
 function draw() {
 clear();
 noStroke();
-fill(255, 70);
+fill(0, 150);
 rect(0, 0, sketchS, y);
 rect(0, y, x, rectS);
 rect(x + rectS, y, sketchS, rectS);
@@ -73,3 +68,7 @@ if (y < 0) {
   x = round((x + speedx) *z) /z;
   y = round((y + speedy)*z) /z;
 }
+document.getElementsByName("body").addEventListener("load", setInterval(() => {
+   let date = new Date();
+   document.getElementById("time").innerHTML = date.toLocaleTimeString();
+}, 10));

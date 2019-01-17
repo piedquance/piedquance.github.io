@@ -15,20 +15,20 @@ header {
 }
 canvas {
   display: block;
-  margin: auto;
-  margin-top: 4em;
-}
-header:hover {
-  color: #aaa;
+  margin: auto auto;
+  margin-top: 5em;
 }
 nav {
-  background-color: #000a;
+  background-image: linear-gradient(to right, #0000 2%, #000a, #0000 98%);
+  background-color: ;
   margin: auto;
+  padding:0.2em;
   text-align: center;
   width: auto;
   height:23px;
 }
 #stuff, #info {
+    font-family: Consolas, monospace;
     text-decoration: none;
     color: #fffc;
     background-color: #0000;
@@ -41,12 +41,18 @@ nav {
 p {
   margin:0;
 }
+#time {
+  text-align:center;
+  padding:2em;
+  font-size:2em;
+    color: #fffc;
+}
 .stuff, .info {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  top: 70px;
+  top: 74px;
   background-color: #000a;
   overflow: hidden;
   width: 100%;
@@ -62,7 +68,7 @@ ul {
   text-decoration: none;
   display:block;
   width: 80%;
-  margin: 3em auto;
+  margin: 1em auto;
   text-align: center;
   padding:0.5em 0;
   font-size: 16px;
