@@ -19,7 +19,7 @@ canvas {
   margin-top: 5em;
 }
 nav {
-  background-image: linear-gradient(to right, #0000 2%, #000a, #0000 98%);
+  background-image: linear-gradient(to right, #0000 2%, #000a, #000a, #0000 98%);
   background-color: ;
   margin: auto;
   padding:0.2em;
