@@ -19,7 +19,7 @@ canvas {
   margin-top: 5em;
 }
 nav {
-  background-image: linear-gradient(to right, #0000 2%, #000a, #000a, #0000 98%);
+  background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);
   background-color: ;
   margin: auto;
   padding:0.2em;
@@ -33,10 +33,27 @@ nav {
     color: #fffc;
     background-color: #0000;
     letter-spacing: 2px;
-    margin: 0 5%;
-    padding:0 1em;
     font-size: 2em;
     border: 0;
+}
+#stuff {
+  padding-left: 30%;
+}
+#info {
+  padding-right: 30%;
+}
+.stuffcontainer, .infocontainer {
+ display: table-cell;
+ width: 5%;
+ margin-left: 10%;
+}
+.stuffcontainer:hover .stuff {
+  bottom: 0;
+  height: 15%;
+}
+.infocontainer:hover .info {
+  bottom: 0;
+  height: 15%;
 }
 p {
   margin:0;
