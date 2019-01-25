@@ -47,11 +47,7 @@ nav {
  width: 5%;
  margin-left: 10%;
 }
-.stuffcontainer:hover .stuff {
-  bottom: 0;
-  height: 15%;
-}
-.infocontainer:hover .info {
+.stuffcontainer:hover .stuff, .infocontainer:hover .info{
   bottom: 0;
   height: 15%;
 }
@@ -90,6 +86,9 @@ ul {
   padding:0.5em 0;
   font-size: 16px;
   color: #fff;
+}
+#github {
+
 }
 .links:link, .links:visited, .links:focus {
   background: #fff2;
