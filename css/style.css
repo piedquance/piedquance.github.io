@@ -79,6 +79,15 @@ ul {
 li {
  list-style-type: none;
 }
+img {
+  padding:0 1em;
+  -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+
+}
+img:hover {
+  opacity: .8;
+}
 .links {
   outline: none;
   text-decoration: none;
