@@ -19,8 +19,8 @@ canvas {
   margin-top: 5em;
 }
 nav {
-  background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);
-  background-color: ;
+  /*background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);*/
+  background-color:#000a ;
   margin: auto;
   padding:0.2em;
   text-align: center;
@@ -75,6 +75,9 @@ p {
 ul {
   padding: 0;
   width: 100%;
+}
+li {
+ list-style-type: none;
 }
 .links {
   outline: none;

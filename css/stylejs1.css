@@ -318,7 +318,7 @@ hr {
 .color {
   margin-top:69px;
   width:25%}
-.colorButton {width:100%}
+.colorButton {width:100%; font-size: 20px;}
 .colorPicker {margin-left:0; margin-top:0;}
 }
 #fade {

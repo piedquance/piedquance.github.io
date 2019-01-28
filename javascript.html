@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--Sources
+    1. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    -->
 <html lang="en" dir="ltr">
   <head>
     <!-- Google Analytics -->
@@ -72,7 +75,7 @@
       <br><br>
       Plus précisément HTML et CSS, mais je vais seulement parler d'HTML pour l'instant. HTML (Hypertext Markup Language) est un langage de balises, appelé en anglais un <i>markup language</i>. Les fichiers .html servent à afficher le contenu des pages web. Chaque élément dans un fichier .html suit le format suivant :</p><br>
       <pre><code class="lang-html">&ltbalise attribut="valeur"&gtcontenu&lt/balise&gt</code></pre><br>
-      <p id="banane">Le navigateur web affiche seulement le texte blanc sur l'écran, le reste sert à la structure. Le texte rose indique le type d'élément ainsi qu'un attribut de l'élément, qui comprend une valeur de couleure verte. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises <code>&ltp&gt</code> et <code>&lt/p&gt</code>, qui veulent dire paragraphe. Il a aussi un attribut  <code>id="banane"</code>, cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments du même type.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments HTML directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
+      <p id="banane">Le navigateur web affiche seulement le texte blanc sur l'écran, le reste sert à la structure. Le texte rose indique le type d'élément ainsi qu'un attribut de l'élément, qui comprend une valeur de couleure verte. Chaque élément a une balise d'ouverture et une balise de fermeture. Pour donner un exemple, le paragraphe que vous êtes en train de lire est entouré des balises <code>&ltp&gt</code> et <code>&lt/p&gt</code>, voulant dire paragraphe. Il a aussi un attribut  <code>id="banane"</code>, cela lui assigne l'identifiant banane. Un identifiant permet de modifier l'élément en question sans affecter le reste des éléments <code>p</code>.<br>Avec JavaScript, il est possible de modifier le contenu d'éléments HTML directement dans le navigateur. Pour faire cela, il vous faudra accéder à la console JavaScript en faisant Ctrl-Shift-J (Windows/Linux) ou Cmd+Opt+J (Mac). Notez que la console ne sera pas assessible si vous utilisez un téléphone intelligent. Une fois là, entrez le texte suivant dans la console :</p><br>
       <pre><code class="lang-javascript">document.getElementById("banane").innerHTML = "Vous pouvez changer ce texte si vous voulez."</code></pre><br>
       <p>Si bien écrite, cette commande devrait changer le paragraphe précédent par le texte que vous avez mis entre guillemets. <code>document</code> est le nom donné au fichier .html (En d'autres mots, la page web). <code>getElementById</code> est une fonction qui requiert une valeur afin de donner un résultat. La valeur dans ce cas-là est <code>"banane"</code>, et le résultat de la fonction est l'élément ayant l'identifiant "banane". Finalement, <code>innerHTML</code> permet d'accéder au contenu de l'élément. Si vous entrez la commande sans le signe d'égalité et le texte de droite, la console vous renvoie le contenu de l'élément.
         <button id="butt" onclick=replace(document.getElementById("banane"))>Cliquez içi pour remettre le texte.</button></p>
@@ -208,7 +211,7 @@ Fonction("Exemple");  //"Exemple!!!"
 "0" == false;
 "aha" < "a";
 (2 + (1/3 + 2) * 3) - 3**2  == !true;
-3 * 3 === 8.9999999999999999;
+3 * 3 === 8.9999999999999999999999999999999999999999999999999;
 "true" === true;
 !!"true" === true;
 "abc" * 2;</code></pre>
@@ -229,7 +232,7 @@ Fonction("Exemple");  //"Exemple!!!"
       }</code></pre>
       <p><code>if</code>, <code>else if</code> et <code>else</code> sont ces conditionnels. Ils peuvent parfois utiliser dans leurs conditions les symboles <code>&&</code> et <code>||</code> (ET et OU, respectivement).</p>
       <pre><code class="lang-javascript">let foo = 4;
-if(foo == 4 && foo = 3) {
+if(foo == 4 && foo >= 3) {
   let fooo = 2;
 }
 console.log(fooo);
@@ -240,7 +243,7 @@ console.log(fooo);
         <b>*</b> <code>console.log()</code> essaye d'imprimer la valeur de <code>fooo</code> dans la console.<br>
         <b>*</b> Aha! <code>console.log()</code> n'a pas accès à <code>fooo</code>, parce que <code>fooo</code> est une variable locale, auquelle l'accès est restreint au bloc de code où elle a été créé (à cause de la déclaration <code>let</code>).<br>
         <b>*</b> <code>Uncaught ReferenceError: fooo is not defined</code>, fin du programme.<br>
-       </p>
+      </p> <br>
        <p>Une boucle fonctionne de la même manière qu'un conditionnel, seulement que le code à l'intérieur de la boucle continuera d'exécuter tant que la condition sera vraie.</p>
        <pre><code class="lang-javascript">while(true) {
   //code
@@ -289,11 +292,11 @@ document.getElementById("id");
 document.getElementsByClassName("nomDeClass");
 //ces fonction retournent le ou les élément(s) associé(s) avec le sélécteur.
 document.addEventListener("action", fonction);
-/*cette fonction active une autre fonction  lorsque qu'une action est faites.
+/*cette fonction active une autre fonction  lorsque qu'une action est faite.
 Liste d'actions courantes:
-"mouseover" : Activée lorsque la sourie est sur l'élément.
-"mouseout" : Activée lorsque la sourie est lors de l'élément.
-"mousemove" : Activée lorsque la sourie bouge.
+"mouseover" : Activée lorsque la souris est sur l'élément.
+"mouseout" : Activée lorsque la souris est à l'extérieur de l'élément.
+"mousemove" : Activée lorsque la souris bouge.
 "click" : Activée lorsque l'élément est cliqué.
 "scroll" : Activée lorsque la page défile.
 */</code></pre>
