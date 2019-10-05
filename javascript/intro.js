@@ -11,7 +11,6 @@ let Arbre = {
         alert("Le nom de l'arbre est Arbre 1.");
     }
 };
-////h^llo? is anyon^ th^r^?////
 //progress bar
 let progress = document.getElementById("bar");
 window.addEventListener('scroll', function() {
