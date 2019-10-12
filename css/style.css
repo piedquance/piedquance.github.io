@@ -1,33 +1,37 @@
 body {
   font-size: 10px;
   margin: 0;
-  background: url(images/background.jpg) no-repeat;
+  background: url(images/background.jpg);
     font-family: Consolas, monospace;
+    background-size: auto;
+    background-position-x: center;
 }
+
 header {
   letter-spacing: 2px;
   color: #fffc;
   font-size: 3em;
-  padding: 0.2em 0em;
   text-align: center;
   width: 100%;
-  height:35px;
+  height: 1.5em;
 }
+
 canvas {
   display: block;
   margin: auto auto;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 nav {
   /*background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);*/
-  background-color:#000a ;
+  background-color:rgba(0, 0, 0, 0.6) ;
   margin: auto;
-  padding:0.2em;
   text-align: center;
-  width: auto;
-  height:23px;
+  width: 100%;
+  height:2.5em;
+  display:table;
 }
 #stuff, #info {
+    position:fixed;
     font-family: Consolas, monospace;
     text-decoration: none;
     color: #fffc;
@@ -35,43 +39,60 @@ nav {
     letter-spacing: 2px;
     font-size: 2em;
     border: 0;
+    width:10%;
+    text-align:center;
 }
 #stuff {
-  padding-left: 30%;
+  margin-left: 15%;
+  left:0;
 }
 #info {
-  padding-right: 30%;
+  margin-right: 15%;
+  right:0;
 }
 .stuffcontainer, .infocontainer {
  display: table-cell;
- width: 5%;
- margin-left: 10%;
+width: 50%;
 }
 .stuffcontainer:hover .stuff, .infocontainer:hover .info{
-  bottom: 0;
-  height: 23%;
+
+  bottom: 2em;
+  max-height: 2000px;
+  transition: .7s ease;
 }
 p {
   margin:0;
+  padding-top: 0.2em;
+}
+
+canvas {
+  margin-top: 0em;
 }
 #time {
   text-align:center;
-  padding:2em;
-  font-size:2em;
+  padding-top:0.125em;
+  padding-bottom: 0.125em;
+  font-size: 20px;
+  height:1em;
     color: #fffc;
 }
 .stuff, .info {
   position: absolute;
   bottom: 100%;
-  left: 0;
-  right: 0;
-  top: 74px;
-  background-color: #000a;
+  top: 7em;
+  background-color:rgba(0, 0, 0, 0.6) ;
   overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
+  width: 39.09090909%;
+  max-height:0;
+  transition: .7s ease;
 }
+.stuff {
+  left: 0.9090909%;
+}
+.info {
+  right: 0.9090909%;;
+}
+
 ul {
   padding: 0;
   width: 100%;
@@ -100,9 +121,55 @@ img:hover {
   font-size: 16px;
   color: #fff;
 }
-#github {
+.li {
+  outline: none;
+  text-decoration: none;
+  display:block;
+  width: 80%;
+  margin: 1em auto;
+  text-align: center;
+  padding:0.5em 0;
+  font-size: 16px;
+  color: #fff;
+}
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+height:2em;
+font-size: 1em;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.6) ;
+color: white;
+text-align: center;
+}
+
+.fo {
+  font-size:16px;
+  text-decoration: none;
+  color: white;
+}
+.fo:visited {
+  color:#888;
 
 }
+.fo:hover {
+  text-decoration: underline;
+}
+
+.foo {
+  padding-top: 0;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.foo:visited {
+  color:#888;
+
+}
+.foo:hover {
+  text-decoration: underline;
+}
+
 .links:link, .links:visited, .links:focus {
   background: #fff2;
 }
