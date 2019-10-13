@@ -161,6 +161,7 @@ text-align: center;
   padding-top: 0;
   font-size: 1.5em;
   text-decoration: none;
+  color:#FFF;
 }
 .foo:visited {
   color:#888;
