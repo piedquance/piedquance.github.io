@@ -220,3 +220,17 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
 }
+
+@media screen and (max-width:950px) {
+  #stuff, #info {
+    width:50%;
+}
+#stuff {
+  margin-left: 0%;
+  left:0;
+}
+#info {
+  margin-right: 0%;
+  right:0;
+}
+}

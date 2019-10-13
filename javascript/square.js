@@ -61,5 +61,3 @@ document.getElementsByName("body").addEventListener("load", setInterval(() => {
     img.backgroundSize = "auto";
    }
 }, 100));
-
-document.getElementsByClassName(li)[0].addEventListener("mouseover", () => {document.getElementsByClassName(li)[0].innerHTML += "...yet"});
