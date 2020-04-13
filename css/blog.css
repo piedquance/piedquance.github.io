@@ -1,0 +1,49 @@
+html {
+    font-family: Consolas, monospace;
+    height:100%;
+}
+body {height:100%;margin:0;}
+.post {
+    margin:1em;
+    background-color:#ddd;
+    color:#000;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    max-width:400px;
+  }
+
+  p {
+    margin:0;
+    padding:1em;
+  }
+  h2 {
+    margin:0;
+    position:relative;
+    left:-0.5em;
+    top:-0.5em;
+  }
+
+  .image {
+      margin-top:0;
+      background-color: #fff;
+  }
+  img {
+    max-width:90%;
+    border: 5px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

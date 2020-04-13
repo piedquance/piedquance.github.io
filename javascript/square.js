@@ -38,6 +38,7 @@ if (y < 0) {
 var a = 1;
 var stuff = document.getElementsByClassName("stuff")[0].style;
 var info = document.getElementsByClassName("info")[0].style;
+var news = document.getElementsByClassName("news")[0].style;
 var img = document.body.style;
 
 document.getElementsByName("body").addEventListener("load", setInterval(() => {
@@ -48,6 +49,7 @@ document.getElementsByName("body").addEventListener("load", setInterval(() => {
     stuff.left = "0.9090909%";
     info.width = "39.09090909%";
     info.right = "0.9090909%";
+    //news.width = "20%";
    } else {
     document.getElementById("time").innerHTML = "";
    stuff.width = "50%";
