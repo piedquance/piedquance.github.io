@@ -80,11 +80,12 @@ canvas {
   position: absolute;
   bottom: 100%;
   top: 7em;
-  background-color:rgba(0, 0, 0, 0.6) ;
+   background-color:rgba(0, 0, 0, 0.6) ;
   overflow: hidden;
   width: 39.09090909%;
   max-height:0;
   transition: .7s ease;
+  mix-blend-mode: hard-light;
 }
 .stuff {
   left: 0.9090909%;
@@ -172,15 +173,23 @@ text-align: center;
 }
 
 .links:link, .links:visited, .links:focus {
-  background: #fff2;
+  background: #fff1;
 }
 .links:hover {
-  background: #fff2;
+  background: #fff6;
           animation: color 0.5s;
 }
+.links:not( :hover ) {
+  animation: colorout 0.5s;
+}
 @keyframes color {
-      from { background: #fff5; }
-    to   { background: #fff2; }
+      from { background: #fff1; }
+    to   { background: #fff6; }
+}
+
+@keyframes colorout {
+  from { background: #fff6;}
+  to { background: #fff1;}
 }
 /*fade effect*/
 .fade {

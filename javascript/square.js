@@ -19,10 +19,14 @@ function draw() {
 clear();
 noStroke();
 fill(0, 153);
-rect(0, 0, sketchS, y);
-rect(0, y, x, rectS);
-rect(x + rectS, y, sketchS, rectS);
-rect(0, y + rectS, sketchS, sketchS);
+//This is the top-left rectangle
+rect(0, 0, x + rectS, y);
+//top-right rectangle
+rect(x+ rectS, 0, sketchS - x - rectS , y + rectS);
+//bottom-left rectangle
+rect(0, y, x, sketchS - y);
+//bottom-right rectangle
+rect(x, y + rectS, sketchS - x, sketchS);
 if (y < 0) {
     speedy = random(1, 1.5);
   } else if (y > (sketchS - rectS)) {
