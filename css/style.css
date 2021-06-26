@@ -42,11 +42,11 @@ nav {
     width:10%;
     text-align:center;
 }
-#stuff {
+#info {
   margin-left: 15%;
   left:0;
 }
-#info {
+#stuff {
   margin-right: 15%;
   right:0;
 }
@@ -87,10 +87,10 @@ canvas {
   transition: .7s ease;
   mix-blend-mode: hard-light;
 }
-.stuff {
+.info {
   left: 0.9090909%;
 }
-.info {
+.stuff {
   right: 0.9090909%;;
 }
 
@@ -232,14 +232,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width:950px) {
-  #stuff, #info {
+  #info, #stuff {
     width:50%;
 }
-#stuff {
+#info {
   margin-left: 0%;
   left:0;
 }
-#info {
+#stuff {
   margin-right: 0%;
   right:0;
 }
