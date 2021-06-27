@@ -1,19 +1,15 @@
 body {
-  font-size: 10px;
   margin: 0;
-  background: url(images/background.jpg);
-    font-family: Consolas, monospace;
-    background-size: auto;
-    background-position-x: center;
+  font-family: Consolas, monospace;
 }
 
-header {
-  letter-spacing: 2px;
-  color: #fffc;
-  font-size: 3em;
-  text-align: center;
-  width: 100%;
-  height: 1.5em;
+.container {
+  width:100%;
+}
+
+.message {
+  font-weight: 600;
+  text-align:center;
 }
 
 canvas {
@@ -21,167 +17,7 @@ canvas {
   margin: auto auto;
   margin-top: 2em;
 }
-nav {
-  /*background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);*/
-  background-color:rgba(0, 0, 0, 0.6) ;
-  margin: auto;
-  text-align: center;
-  width: 100%;
-  height:2.5em;
-  display:table;
-}
-#stuff, #info {
-    position:fixed;
-    font-family: Consolas, monospace;
-    text-decoration: none;
-    color: #fffc;
-    background-color: #0000;
-    letter-spacing: 2px;
-    font-size: 2em;
-    border: 0;
-    width:10%;
-    text-align:center;
-}
-#info {
-  margin-left: 15%;
-  left:0;
-}
-#stuff {
-  margin-right: 15%;
-  right:0;
-}
-.stuffcontainer, .infocontainer {
- display: table-cell;
-width: 50%;
-}
-.stuffcontainer:hover .stuff, .infocontainer:hover .info{
 
-  bottom: 2em;
-  max-height: 2000px;
-  transition: .7s ease;
-}
-p {
-  margin:0;
-  padding-top: 0.2em;
-}
-
-canvas {
-  margin-top: 0em;
-}
-#time {
-  text-align:center;
-  padding-top:0.125em;
-  padding-bottom: 0.125em;
-  font-size: 20px;
-  height:1em;
-    color: #fffc;
-}
-.stuff, .info {
-  position: absolute;
-  bottom: 100%;
-  top: 7em;
-   background-color:rgba(0, 0, 0, 0.6) ;
-  overflow: hidden;
-  width: 39.09090909%;
-  max-height:0;
-  transition: .7s ease;
-  mix-blend-mode: hard-light;
-}
-.info {
-  left: 0.9090909%;
-}
-.stuff {
-  right: 0.9090909%;;
-}
-
-ul {
-  padding: 0;
-  width: 100%;
-}
-li {
- list-style-type: none;
-}
-img {
-  margin-top: 1em;
-  padding:0 1em;
-  -webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-
-}
-img:hover {
-  opacity: .8;
-}
-.links {
-  outline: none;
-  text-decoration: none;
-  display:block;
-  width: 80%;
-  margin: 1em auto;
-  text-align: center;
-  padding:0.5em 0;
-  font-size: 16px;
-  color: #fff;
-}
-.li {
-  outline: none;
-  text-decoration: none;
-  display:block;
-  width: 80%;
-  margin: 1em auto;
-  text-align: center;
-  padding:0.5em 0;
-  font-size: 16px;
-  color: #fff;
-}
-footer {
-position: fixed;
-left: 0;
-bottom: 0;
-height:2em;
-font-size: 1em;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.6) ;
-color: white;
-text-align: center;
-}
-
-.fo {
-  font-size:16px;
-  text-decoration: none;
-  color: white;
-}
-.fo:visited {
-  color:#888;
-
-}
-.fo:hover {
-  text-decoration: underline;
-}
-
-.foo {
-  padding-top: 0;
-  font-size: 1.5em;
-  text-decoration: none;
-  color:#FFF;
-}
-.foo:visited {
-  color:#888;
-
-}
-.foo:hover {
-  text-decoration: underline;
-}
-
-.links:link, .links:visited, .links:focus {
-  background: #fff1;
-}
-.links:hover {
-  background: #fff6;
-          animation: color 0.5s;
-}
-.links:not( :hover ) {
-  animation: colorout 0.5s;
-}
 @keyframes color {
       from { background: #fff1; }
     to   { background: #fff6; }
@@ -232,14 +68,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width:950px) {
-  #info, #stuff {
+  #stuff, #info {
     width:50%;
 }
-#info {
+#stuff {
   margin-left: 0%;
   left:0;
 }
-#stuff {
+#info {
   margin-right: 0%;
   right:0;
 }
