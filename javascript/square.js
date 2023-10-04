@@ -49,15 +49,15 @@ document.getElementsByName("body").addEventListener("load", setInterval(() => {
    if ( windowWidth > 950) {
     document.getElementById("time").innerHTML = date.toLocaleTimeString();
     stuff.width = "39.09090909%";
-    stuff.left = "0.9090909%";
+    stuff.right = "0.9090909%";
     info.width = "39.09090909%";
-    info.right = "0.9090909%";
+    info.left = "0.9090909%";
    } else {
     document.getElementById("time").innerHTML = "";
-   stuff.width = "50%";
-   stuff.left = "0";
-   info.width = "50%";
-   info.right = "0";
+   stuff.width = "100%";
+   stuff.right = "0";
+   info.width = "100%";
+   info.left = "0";
    } 
    if( windowHeight > 813) {
       img.backgroundSize = "auto " + windowHeight + "px";
