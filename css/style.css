@@ -30,6 +30,18 @@ nav {
   height:2.5em;
   display:table;
 }
+.text {
+  outline: none;
+  text-decoration: none;
+  display:block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding:0 0;
+  font-size: 16px;
+  color: #fff;
+}
+
 #stuff, #info {
     position:fixed;
     font-family: Consolas, monospace;
@@ -130,6 +142,9 @@ img:hover {
 #email_link {
   width:30%;
   display: inline-block;
+}
+#linkedin_link, #email_link {
+  margin: 0 auto;
 }
 
 .li {
