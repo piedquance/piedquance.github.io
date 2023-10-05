@@ -122,6 +122,16 @@ img:hover {
   font-size: 16px;
   color: #fff;
 }
+#linkedin_link {
+  width:50%;
+  display: inline-block;
+}
+
+#email_link {
+  width:30%;
+  display: inline-block;
+}
+
 .li {
   outline: none;
   text-decoration: none;
