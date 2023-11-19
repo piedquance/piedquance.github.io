@@ -1,29 +1,90 @@
 body {
   font-size: 10px;
   margin: 0;
-  background: url(images/background.jpg);
     font-family: Consolas, monospace;
-    background-size: auto;
-    background-position-x: center;
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+
 }
 
 header {
-  letter-spacing: 2px;
-  color: #fffc;
-  font-size: 3em;
-  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  text-align: left;
   width: 100%;
-  height: 1.5em;
+  margin: 5px 20%;
+  max-width: 80%;
 }
 
-canvas {
-  display: block;
-  margin: auto auto;
-  margin-top: 2em;
+#projects {
+  border-style: double;
+  margin: 10px 20%;
 }
+
+#contact {
+  margin: 0 20%;
+}
+
+title {
+  height: -40px;
+  color:#fff;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 5px 15px;
+}
+
+.li {
+  outline: none;
+  text-decoration: none;
+  display:block;
+  text-align: left;
+  font-size: 18px;
+}
+
+.links {
+  outline: none;
+  text-decoration: none;
+  display:block;
+  text-align: left;
+  font-size: 18px;
+  color: #fff;
+}
+
+.links:link, .links:visited, .links:focus {
+  color: #aaa;
+}
+.links:hover {
+  text-decoration:underline;
+}
+
+#linkedin_link {
+  width:10%;
+  display: inline-block;
+}
+
+#email_link {
+  width:10%;
+  display: inline-block;
+}
+#linkedin_link, #email_link {
+  margin: 0 auto;
+}
+
+.less-text {
+  font-size: 18px;
+  margin:0 0 0 10px;
+}
+
+
+/*
 nav {
-  /*background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);*/
-  background-color:rgba(0, 0, 0, 0.6) ;
+  /*background-image: linear-gradient(to right, #0000, #000a, #000a, #0000);
+  background-color:rgba(128, 126, 126, 0.6) ;
   margin: auto;
   text-align: center;
   width: 100%;
@@ -123,41 +184,7 @@ img {
 img:hover {
   opacity: .8;
 }
-.links {
-  outline: none;
-  text-decoration: none;
-  display:block;
-  width: 80%;
-  margin: 1em auto;
-  text-align: center;
-  padding:0.5em 0;
-  font-size: 16px;
-  color: #fff;
-}
-#linkedin_link {
-  width:50%;
-  display: inline-block;
-}
 
-#email_link {
-  width:30%;
-  display: inline-block;
-}
-#linkedin_link, #email_link {
-  margin: 0 auto;
-}
-
-.li {
-  outline: none;
-  text-decoration: none;
-  display:block;
-  width: 80%;
-  margin: 1em auto;
-  text-align: center;
-  padding:0.5em 0;
-  font-size: 16px;
-  color: #fff;
-}
 footer {
 position: fixed;
 left: 0;
@@ -216,7 +243,7 @@ text-align: center;
   from { background: #fff6;}
   to { background: #fff1;}
 }
-/*fade effect*/
+fade effect
 .fade {
   margin: 0;
   -webkit-animation: fadein 2s;
@@ -245,7 +272,7 @@ text-align: center;
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-/*scrollbar*/
+scrollbar
 body::-webkit-scrollbar {
     width: 1em;
 }
@@ -268,4 +295,4 @@ body::-webkit-scrollbar-thumb {
   margin-right: 0%;
   right:0;
 }
-}
+} */
