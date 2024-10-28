@@ -19,7 +19,7 @@ header {
   max-width: 80%;
 }
 
-#projects {
+.section {
   border-style: double;
   margin: 10px 20%;
 }
@@ -36,6 +36,10 @@ title {
 .section-title {
   font-size: 20px;
   margin: 5px 15px;
+}
+
+p {
+  font-size: 16px;
 }
 
 .li {
@@ -63,12 +67,12 @@ title {
 }
 
 #linkedin_link {
-  width:10%;
+  width:fit-content;
   display: inline-block;
 }
 
 #email_link {
-  width:10%;
+  width:fit-content;
   display: inline-block;
 }
 #linkedin_link, #email_link {
@@ -78,6 +82,10 @@ title {
 .less-text {
   font-size: 18px;
   margin:0 0 0 10px;
+}
+
+.blog {
+  display:none;
 }
 
 
